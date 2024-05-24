@@ -1,0 +1,336 @@
+<!doctype html><html lang=en dir=ltr><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>RH415 v7.5 综合练习题解 | RHCSS（Red Hat Certified Security Specialist） | Hui.Ke</title>
+<meta name=generator content="Hugo Eureka 0.9.3"><link rel=stylesheet href=https://www.hui.ke/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css><script defer src=https://www.hui.ke/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js></script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" as=style onload='this.onload=null,this.rel="stylesheet"'><link rel=stylesheet href="https://lib.baomitu.com/highlight.js/11.7.0/styles/vs.min.css%25!%28EXTRA%20string=11.7.0,%20string=vs%29" media=print onload='this.media="all",this.onload=null' crossorigin><script defer src=https://lib.baomitu.com/highlight.js/11.7.0/highlight.min.js crossorigin></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/bash.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/ini.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/json.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/php.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/python.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/sql.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/x86asm.min.js></script><script async type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/xml.min.js></script><link rel=stylesheet href=https://www.hui.ke/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css media=print onload='this.media="all",this.onload=null'><script async type=text/javascript src=https://lib.baomitu.com/font-awesome/6.5.2/js/all.min.js></script><link rel=stylesheet href="https://lib.baomitu.com/KaTeX/0.16.9/katex.min.css%25!%28EXTRA%20string=0.16.9%29" media=print onload='this.media="all",this.onload=null' crossorigin><script defer src="https://lib.baomitu.com/KaTeX/0.16.9/katex.min.js%25!%28EXTRA%20string=0.16.9%29" crossorigin></script><script defer src="https://lib.baomitu.com/KaTeX/0.16.9/contrib/auto-render.min.js%25!%28EXTRA%20string=0.16.9%29" crossorigin></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script><script defer src=https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js crossorigin></script><link rel=icon type=image/png sizes=32x32 href=https://www.hui.ke/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_2009_32x32_fill_box_center_3.png><link rel=apple-touch-icon sizes=180x180 href=https://www.hui.ke/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_2009_180x180_fill_box_center_3.png><meta name=description content="  本文是 RHCSS 培训课程 RH415 v7.5 的考试练习题，将此题库练习十遍，基本可通过考试。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Docs","item":"https://www.hui.ke/docs/"},{"@type":"ListItem","position":2,"name":"RHCSS（Red Hat Certified Security Specialist）","item":"https://www.hui.ke/docs/rhcss/"},{"@type":"ListItem","position":3,"name":"RH415 v7.5 综合练习题解","item":"https://www.hui.ke/docs/rhcss/10/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hui.ke/docs/rhcss/10/"},"headline":"RH415 v7.5 综合练习题解 | RHCSS（Red Hat Certified Security Specialist） | Hui.Ke","datePublished":"2023-03-23T11:01:35+08:00","dateModified":"2023-03-24T09:13:35+08:00","wordCount":3840,"author":{"@type":"Person","name":"Hui.Ke"},"publisher":{"@type":"Person","name":"Hui.Ke","logo":{"@type":"ImageObject","url":"https://www.hui.ke/icon.png"}},"description":"\u003cp\u003e  本文是 RHCSS 培训课程 RH415 v7.5 的考试练习题，将此题库练习十遍，基本可通过考试。\u003c\/p\u003e"}</script><meta property="og:title" content="RH415 v7.5 综合练习题解 | RHCSS（Red Hat Certified Security Specialist） | Hui.Ke"><meta property="og:type" content="article"><meta property="og:image" content="https://www.hui.ke/icon.png"><meta property="og:url" content="https://www.hui.ke/docs/rhcss/10/"><meta property="og:description" content="  本文是 RHCSS 培训课程 RH415 v7.5 的考试练习题，将此题库练习十遍，基本可通过考试。"><meta property="og:locale" content="en"><meta property="og:site_name" content="Hui.Ke"><meta property="article:published_time" content="2023-03-23T11:01:35+08:00"><meta property="article:modified_time" content="2023-03-24T09:13:35+08:00"><meta property="article:section" content="docs"><meta property="article:tag" content="RHCSS"><meta property="article:tag" content="题库"><meta property="og:see_also" content="https://www.hui.ke/posts/cyberpanel-successfully-installed/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/11/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/5/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/4/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/3/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/2/"><meta property="og:see_also" content="https://www.hui.ke/docs/rhcss/1/"><meta property="og:see_also" content="https://www.hui.ke/posts/make-money-with-offshore-idle-servers/"><meta property="og:see_also" content="https://www.hui.ke/posts/linux-only-allows-ssh-connections-using-the-uploaded-public-key/"><meta property="og:see_also" content="https://www.hui.ke/posts/rm-rf-bash-history/"><meta property="og:see_also" content="https://www.hui.ke/posts/ubuntu-optimization/"><meta property="og:see_also" content="https://www.hui.ke/posts/centos-security-hardening-faq/"><meta property="og:see_also" content="https://www.hui.ke/posts/ip-blocklist-and-allowlist/"><script>!function(e){"use strict";!function(){var i,s=window,o=document,a=e,c="".concat("https:"===o.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=o.createElement("script"),r=o.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",a.d=n,i=function(){s.LA.ids.push(a)},s.LA?s.LA.ids&&i():(s.LA=e,s.LA.ids=[],i()),r.parentNode.insertBefore(n,r)}()}({id:"Jgb8aUbG5e3rqhrs",ck:"Jgb8aUbG5e3rqhrs",autoTrack:!0,hashMode:!0})</script><script>!function(e,t,n,s){var o=t.createElement("script"),i=t.getElementsByTagName("script")[0];o.type="text/javascript",o.crossorigin=!0,o.onload=function(){(new e[s].Monitor).init({id:"K9RugzpZqP1AhgMc",sendSuspicious:!0,sendSpaPv:!0})},i.parentNode.insertBefore(o,i),o.src=n}(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268471087790880" crossorigin=anonymous></script><script async src="https://fundingchoicesmessages.google.com/i/pub-7268471087790880?ers=1" nonce=RaVVcozNOf5LtU1tUzUk7Q></script><script nonce=RaVVcozNOf5LtU1tUzUk7Q>(function(){function e(){if(!window.frames.googlefcPresent)if(document.body){const e=document.createElement("iframe");e.style="width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;",e.style.display="none",e.name="googlefcPresent",document.body.appendChild(e)}else setTimeout(e,0)}e()})()</script><script>(function(){"use strict";function Ue(e){var t=0;return function(){return t<e.length?{done:!1,value:e[t++]}:{done:!0}}}X="function"==typeof Object.defineProperties?Object.defineProperty:function(e,t,n){return e==Array.prototype||e==Object.prototype?e:(e[t]=n.value,e)};function Re(e){e=["object"==typeof globalThis&&globalThis,e,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var t,n=0;n<e.length;++n)if(t=e[n],t&&t.Math==Math)return t;throw Error("Cannot find global object")}Oe=Re(this);function Fe(e,t){if(t)a:{var n,o,s=Oe;e=e.split(".");for(n=0;n<e.length-1;n++){if(o=e[n],!(o in s))break a;s=s[o]}e=e[e.length-1],n=s[e],t=t(n),t!=n&&t!=null&&X(s,e,{configurable:!0,writable:!0,value:t})}}if(xe="function"==typeof Object.create?Object.create:function(e){function t(){}return t.prototype=e,new t},"function"==typeof Object.setPrototypeOf)z=Object.setPrototypeOf;else{a:{var e,i,u,m,p,g,y,_,w,x,k,A,S,F,z,R,P,V,W,X,Oe,xe,Ke={a:!0},ve={},ue,ce,ee,pe,be,te;try{ve.__proto__=Ke,A=ve.a;break a}catch{}A=!1}z=A?function(e,t){if(e.__proto__=t,e.__proto__!==t)throw new TypeError(e+" is not extensible");return e}:null}W=z;function U(e,t){if(e.prototype=xe(t.prototype),e.prototype.constructor=e,W)W(e,t);else for(n in t)if("prototype"!=n)if(Object.defineProperties){var n,s=Object.getOwnPropertyDescriptor(t,n);s&&Object.defineProperty(e,n,s)}else e[n]=t[n];e.A=t.prototype}function Ie(){for(var t=Number(this),n=[],e=t;e<arguments.length;e++)n[e-t]=arguments[e];return n}ue="function"==typeof Object.assign?Object.assign:function(e){for(var n,o,s=1;s<arguments.length;s++)if(n=arguments[s],n)for(o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o]);return e},Fe("Object.assign",function(e){return e||ue}),e=this||self;function $(e){return e}a:{for(var de=["CLOSURE_FLAGS"],j=e,I=0;I<de.length;I++)if(j=j[de[I]],j==null){w=null;break a}w=j}P=w&&w[610401301],V=P??!1,k=e.navigator,u=k?k.userAgentData||null:null;function D(e){return!!V&&!!u&&u.brands.some(function(t){return(t=t.brand)&&-1!=t.indexOf(e)})}function t(t){var n;a:{if((n=e.navigator)&&(n=n.userAgent))break a;n=""}return-1!=n.indexOf(t)}function r(){return!!V&&!!u&&0<u.brands.length}function N(){return r()?D("Chromium"):(t("Chrome")||t("CriOS"))&&!(r()?0:t("Edge"))||t("Silk")}ce=!r()&&(t("Trident")||t("MSIE")),!t("Android")||N(),N(),t("Safari")&&(N()||(r()?0:t("Coast"))||(r()?0:t("Opera"))||(r()?0:t("Edge"))||(r()?D("Microsoft Edge"):t("Edg/"))||r()&&D("Opera")),S={},g=null,F="undefined"!=typeof Uint8Array,ee=!ce&&"function"==typeof btoa,i="function"==typeof Symbol&&"symbol"==typeof Symbol()?Symbol():void 0,x=i?function(e,t){e[i]|=t}:function(e,t){void 0!==e.g?e.g|=t:Object.defineProperties(e,{g:{value:t,configurable:!0,writable:!0,enumerable:!1}})};function G(e){var t=a(e);1!==(t&1)&&(Object.isFrozen(e)&&(e=Array.prototype.slice.call(e)),s(e,t|1))}var a=i?function(e){return e[i]|0}:function(e){return e.g|0},l=i?function(e){return e[i]}:function(e){return e.g},s=i?function(e,t){e[i]=t}:function(e,t){void 0!==e.g?e.g=t:Object.defineProperties(e,{g:{value:t,configurable:!0,writable:!0,enumerable:!1}})};function Y(){var e=[];return x(e,1),e}function He(e,t){s(t,(e|0)&-99)}function B(e,t){s(t,(e|34)&-73)}function C(e){return e=e>>11&1023,0===e?536870912:e}p={};function f(e){return null!==e&&"object"==typeof e&&!Array.isArray(e)&&e.constructor===Object}R=[],s(R,39),m=Object.freeze(R);function H(e,t){return y=t,e=new e(t),y=void 0,e}function O(e,t,n){if(e==null&&(e=y),y=void 0,e==null)o=96,n?(e=[n],o|=512):e=[],t&&(o=o&-2095105|(t&1023)<<11);else{if(!Array.isArray(e))throw Error();if(o=a(e),o&64)return e;if(o|=64,n&&(o|=512,n!==e[0]))throw Error();a:{if(n=e,i=n.length,i){var o,i,c=i-1,r=n[c];if(f(r)){o|=256,t=(o>>9&1)-1,i=c-t,1024<=i&&(K(n,t,r),i=1023),o=o&-2095105|(i&1023)<<11;break a}}t&&(r=(o>>9&1)-1,t=Math.max(t,i-r),1024<t&&(K(n,r,{}),o|=256,t=1023),o=o&-2095105|(t&1023)<<11)}}return s(e,o),e}function K(e,t,n){for(var o,i=1023+t,a=e.length,s=i;s<a;s++)o=e[s],o!=null&&o!==n&&(n[s-t]=o);e.length=i+1,e[i]=n}function $e(e){switch(typeof e){case"number":return isFinite(e)?e:String(e);case"boolean":return e?1:0;case"object":if(e&&!Array.isArray(e)&&F&&e!=null&&e instanceof Uint8Array){if(ee){for(var n,o,i,a,c,l,t="",s=0,r=e.length-10240;s<r;)t+=String.fromCharCode.apply(null,e.subarray(s,s+=10240));t+=String.fromCharCode.apply(null,s?e.subarray(s):e),e=btoa(t)}else{if(void 0===t&&(t=0),!g){g={},s="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),r=["+/=","+/","-_=","-_.","-_"];for(a=0;5>a;a++){n=s.concat(r[a].split("")),S[a]=n;for(o=0;o<n.length;o++)i=n[o],void 0===g[i]&&(g[i]=o)}}t=S[t],s=Array(Math.floor(e.length/3)),r=t[64]||"";for(a=n=0;n<e.length-2;n+=3)c=e[n],l=e[n+1],i=e[n+2],o=t[c>>2],c=t[(c&3)<<4|l>>4],l=t[(l&15)<<2|i>>6],i=t[i&63],s[a++]=o+c+l+i;switch(o=0,i=r,e.length-n){case 2:o=e[n+1],i=t[(o&15)<<2]||r;case 1:e=e[n],s[a]=t[e>>2]+t[(e&3)<<4|o>>4]+i+r}e=s.join("")}return e}}return e}function Ve(e,t,n){e=Array.prototype.slice.call(e);var i,o=e.length,s=t&256?e[o-1]:void 0;o+=s?-1:0;for(t=t&512?1:0;t<o;t++)e[t]=n(e[t]);if(s){t=e[t]={};for(i in s)Object.prototype.hasOwnProperty.call(s,i)&&(t[i]=n(s[i]))}return e}function J(e,t,n,s,o,i){if(e!=null){if(Array.isArray(e))e=o&&0==e.length&&a(e)&1?void 0:i&&a(e)&2?e:T(e,t,n,void 0!==s,o,i);else if(f(e)){var r,c={};for(r in e)Object.prototype.hasOwnProperty.call(e,r)&&(c[r]=J(e[r],t,n,s,o,i));e=c}else e=t(e,s);return e}}function T(e,t,n,s,o,i){var r,c=s||n?a(e):0;s=s?!!(c&32):void 0,e=Array.prototype.slice.call(e);for(r=0;r<e.length;r++)e[r]=J(e[r],t,n,s,o,i);return n&&n(c,e),e}function Be(e){return e.s===p?e.toJSON():$e(e)}function ne(e,t,n){if(n=void 0===n?B:n,e!=null){if(F&&e instanceof Uint8Array)return t?e:new Uint8Array(e);if(Array.isArray(e)){var o=a(e);return o&2?e:t&&!(o&64)&&(o&32||0===o)?(s(e,o|34),e):(e=T(e,ne,o&4?B:n,!0,!1,!0),t=a(e),t&4&&t&2&&Object.freeze(e),e)}return e.s===p&&(t=e.h,n=l(t),e=n&2?e:H(e.constructor,se(t,n,!0))),e}}function se(e,t,n){var s=n||t&2?B:He,o=!!(t&32);return e=Ve(e,t,function(e){return ne(e,o,s)}),x(e,32|(n?2:0)),e}function oe(e,t){return e=e.h,ie(e,l(e),t)}function ie(e,t,n,s){if(-1===n)return null;if(n>=C(t)){if(t&256)return e[e.length-1][n]}else{var o=e.length;if(s&&t&256&&(s=e[o-1][n],s!=null))return s;if(t=n+((t>>9&1)-1),t<o)return e[t]}}function ae(e,t,n,o,i){var a=C(t);if(n>=a||i){if(i=t,t&256)a=e[e.length-1];else{if(o==null)return;a=e[a+((t>>9&1)-1)]={},i|=256}a[n]=o,i&=-1025,i!==t&&s(e,i)}else e[n+((t>>9&1)-1)]=o,t&256&&(o=e[e.length-1],n in o&&delete o[n]),t&1024&&s(e,t&-1025)}function re(e,t){var d,o=je,u=void 0!==u&&u,i=e.h,r=l(i),n=ie(i,r,t,u),c=!1;return n==null||"object"!=typeof n||(c=Array.isArray(n))||n.s!==p?c?(d=c=a(n),0===d&&(d|=r&32),d|=r&2,d!==c&&s(n,d),o=new o(n)):o=void 0:o=n,o!==n&&o!=null&&ae(i,r,t,o,u),i=o,i==null?i:(e=e.h,r=l(e),r&2||(n=i,o=n.h,c=l(o),n=c&2?H(n.constructor,se(o,c,!1)):n,n!==i&&(i=n,ae(e,r,t,i,u))),i)}function E(e,t){return e=oe(e,t),e==null||"string"==typeof e?e:void 0}function le(e,t){return e=oe(e,t),e??0}function c(e,t){return e=E(e,t),e??""}function d(e,t,n){this.h=O(e,t,n)}d.prototype.toJSON=function(){var e=T(this.h,Be,void 0,void 0,!1,!1);return he(this,e,!0)},d.prototype.s=p,d.prototype.toString=function(){return he(this,this.h,!1).toString()};function he(e,t,n){var i,a,r,c,d,h,p,g,v,b,j,s=e.constructor.v,o=C(l(n?e.h:t)),u=!1;if(s){if(!n){if(t=Array.prototype.slice.call(t),t.length&&f(d=t[t.length-1]))for(u=0;u<s.length;u++)if(s[u]>=o){Object.assign(t[t.length-1]={},d);break}u=!0}o=t,n=!n,d=l(e.h),e=C(d);for(d=(d>>9&1)-1,h=0;h<s.length;h++)c=s[h],c<e?(c+=d,a=o[c],a==null?o[c]=n?m:Y():n&&a!==m&&G(a)):(i||(a=void 0,o.length&&f(a=o[o.length-1])?i=a:o.push(i={})),a=i[c],null==i[c]?i[c]=n?m:Y():n&&a!==m&&G(a))}if(s=t.length,!s)return t;if(f(i=t[s-1])){a:{r=i,o={},n=!1;for(p in r)Object.prototype.hasOwnProperty.call(r,p)&&(e=r[p],Array.isArray(e)&&e!=e&&(n=!0),e!=null?o[p]=e:n=!0);if(n){for(j in o){r=o;break a}r=null}}r!=i&&(v=!0),s--}for(;0<s;s--){if(i=t[s-1],i!=null)break;b=!0}return!v&&!b?t:(u?g=t:g=Array.prototype.slice.call(t,0,s),t=g,u&&(t.length=s),r&&t.push(r),t)}function me(e){return function(t){if(t==null||""==t)t=new e;else{if(t=JSON.parse(t),!Array.isArray(t))throw Error(void 0);x(t,32),t=H(e,t)}return t}}function fe(e){this.h=O(e)}U(fe,d),pe=me(fe);function b(e){this.g=e}b.prototype.toString=function(){return this.g+""},be={};function q(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^Date.now()).toString(36)}function ye(e,t){return t=String(t),"application/xhtml+xml"===e.contentType&&(t=t.toLowerCase()),e.createElement(t)}function M(t){this.g=t||e.document||document}M.prototype.appendChild=function(e,t){e.appendChild(t)};function ze(e,t){e.src=t instanceof b&&t.constructor===b?t.g:"type_error:TrustedResourceUrl";var n,s;(n=(t=null==(s=(n=(e.ownerDocument&&e.ownerDocument.defaultView||window).document).querySelector)?void 0:s.call(n,"script[nonce]"))?t.nonce||t.getAttribute("nonce")||"":"")&&e.setAttribute("nonce",n)}function Te(e){return e=void 0===e?document:e,e.createElement("script")}function L(e,t,n,s,o,i){try{var r=e.g,a=Te(r);a.async=!0,ze(a,t),r.head.appendChild(a),a.addEventListener("load",function(){o(),s&&r.head.removeChild(a)}),a.addEventListener("error",function(){0<n?L(e,t,n-1,s,o,i):(s&&r.head.removeChild(a),i())})}catch{i()}}var Me=e.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),Se=e.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),De=e.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu");function Le(e,t,n){this.i=e,this.l=new M(this.i),this.g=null,this.j=[],this.m=!1,this.u=t,this.o=n}function Ee(t){if(t.i.body&&!t.m){var n=function(){Ce(t),e.setTimeout(function(){return _e(t,3)},50)};L(t.l,t.u,2,!0,function(){e[t.o]||n()},n),t.m=!0}}function Ce(e){for(var i,a,r,c,t=n(1,5),s=0;s<t;s++)i=o(e),e.i.body.appendChild(i),e.j.push(i);t=o(e),t.style.bottom="0",t.style.left="0",t.style.position="fixed",t.style.width=n(100,110).toString()+"%",t.style.zIndex=n(2147483544,2147483644).toString(),t.style["background-color"]=we(249,259,242,252,219,229),t.style["box-shadow"]="0 0 12px #888",t.style.color=we(0,10,0,10,0,10),t.style.display="flex",t.style["justify-content"]="center",t.style["font-family"]="Roboto, Arial",s=o(e),s.style.width=n(80,85).toString()+"%",s.style.maxWidth=n(750,775).toString()+"px",s.style.margin="24px",s.style.display="flex",s.style["align-items"]="flex-start",s.style["justify-content"]="center",i=ye(e.l.g,"IMG"),i.className=q(),i.src=Me,i.alt="Warning icon",i.style.height="24px",i.style.width="24px",i.style["padding-right"]="16px",a=o(e),r=o(e),r.style["font-weight"]="bold",r.textContent=Se,c=o(e),c.textContent=De,v(e,a,r),v(e,a,c),v(e,s,i),v(e,s,a),v(e,t,s),e.g=t,e.i.body.appendChild(e.g),t=n(1,5);for(s=0;s<t;s++)i=o(e),e.i.body.appendChild(i),e.j.push(i)}function v(e,t,s){for(var r,i=n(1,5),a=0;a<i;a++)r=o(e),t.appendChild(r);t.appendChild(s),s=n(1,5);for(i=0;i<s;i++)a=o(e),t.appendChild(a)}function n(e,t){return Math.floor(e+Math.random()*(t-e))}function we(e,t,s,o,i,a){return"rgb("+n(Math.max(e,0),Math.min(t,255)).toString()+","+n(Math.max(s,0),Math.min(o,255)).toString()+","+n(Math.max(i,0),Math.min(a,255)).toString()+")"}function o(e){return e=ye(e.l.g,"DIV"),e.className=q(),e}function _e(t,n){0>=n||null!=t.g&&0!=t.g.offsetHeight&&0!=t.g.offsetWidth||(We(t),Ce(t),e.setTimeout(function(){return _e(t,n-1)},50))}function We(e){var t=e.j,n="undefined"!=typeof Symbol&&Symbol.iterator&&t[Symbol.iterator];if(n)t=n.call(t);else if("number"==typeof t.length)t={next:Ue(t)};else throw Error(String(t)+" is not an iterable or ArrayLike");for(n=t.next();!n.done;n=t.next())(n=n.value)&&n.parentNode&&n.parentNode.removeChild(n);e.j=[],(t=e.g)&&t.parentNode&&t.parentNode.removeChild(t),e.g=null}function ke(t,n,s,o,i){function r(t){document.body?c(document.body):0<t?e.setTimeout(function(){r(t-1)},i):n()}function c(s){s.appendChild(a),e.setTimeout(function(){a?(0!==a.offsetHeight&&0!==a.offsetWidth?n():t(),a.parentNode&&a.parentNode.removeChild(a)):t()},o)}var a=Pe(s);r(3)}function Pe(e){var t=document.createElement("div");return t.className=e,t.style.width="1px",t.style.height="1px",t.style.position="absolute",t.style.left="-10000px",t.style.top="-10000px",t.style.zIndex="-10000",t}function je(e){this.h=O(e)}U(je,d);function ge(e){this.h=O(e)}U(ge,d),te=me(ge);function Z(t){if(t=E(t,4)||"",void 0===_){var n=null,s=e.trustedTypes;if(s&&s.createPolicy){try{n=s.createPolicy("goog#html",{createHTML:$,createScript:$,createScriptURL:$})}catch(t){e.console&&e.console.error(t.message)}_=n}else _=n}return t=(n=_)?n.createScriptURL(t):t,new b(t,be)}function Q(e,t){this.m=e,this.o=new M(e.document),this.g=t,this.j=c(this.g,1),this.u=Z(re(this.g,2)),this.i=!1,t=Z(re(this.g,13)),this.l=new Le(e.document,t,c(this.g,12))}Q.prototype.start=function(){Ae(this)};function Ae(t){Ne(t),L(t.o,t.u,3,!1,function(){a:{var o,n=t.j,s=e.btoa(n);if(s=e[s]){try{o=pe(e.atob(s))}catch{n=!1;break a}n=n===E(o,1)}else n=!1}n?h(t,c(t.g,14)):(h(t,c(t.g,8)),Ee(t.l))},function(){ke(function(){h(t,c(t.g,7)),Ee(t.l)},function(){return h(t,c(t.g,6))},c(t.g,9),le(t.g,10),le(t.g,11))})}function h(e,t){e.i||(e.i=!0,e=new e.m.XMLHttpRequest,e.open("GET",t,!0),e.send())}function Ne(t){var n=e.btoa(t.j);t.m[n]&&h(t,c(t.g,5))}(function(t,n){e[t]=function(){var s=Ie.apply(0,arguments);e[t]=function(){},n.apply(null,s)}})("__h82AlnkH6D91__",function(e){"function"==typeof window.atob&&new Q(window,te(window.atob(e))).start()})}).call(this),window.__h82AlnkH6D91__("WyJwdWItNzI2ODQ3MTA4Nzc5MDg4MCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi03MjY4NDcxMDg3NzkwODgwIl0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hYUkRaVmJ5cGRSUWl3VWZrTDRKS1VIY0lmcTFLOWJmZkNMZkdjNHhZN1JaQlF0S2RsUzJMODJqdXVfWTByTjJWaHJ6VmVQSlN5dkhpSmRQRlpzOEtzcGVBXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFh3akFURmI4RmVQMlZOWTgzN1lHV0MxdGtocWJ6N3p6MWNOZktzcm5XcmJZTGt5aG5pX0s5YzhFUGU2RnlCNkw3bGZOeF9BQl9lTXEwOS0zdDdmX0ZpLXdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVUVUFkUmRxOUVVUloyd05iUXpoQ01XMGdmYUdyX0ZJY0NBMGhMdk5ZRzQxUkNicjRoY3g5OU8tQWJ2bHBrXzktcFl2Q0JVU3pNMXZNWjg5ODY3SHFKdVFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFgyWnBYNjFjM2tJaEd2VXVGWmlQR2xzRkl4RU5LdzgtTzNwX0VHTF9KLTdocGlHSkZkRmItNW5ZWmlWWEpfdTRZbS1hLXUyOXdRb3pDM0xfdFlvNzZPM0FcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUY3lOamcwTnpFd09EYzNPVEE0T0RBXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi03MjY4NDcxMDg3NzkwODgwLmpzP3VzcXBcdTAwM2RDQTgiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4WDNiMkNKa1VlVlYwcFRzcTNZekMwSDlLQ1UxNHA5UW85QjJsSUhQcnJCdkFxWGFjNktIYU15VHY3ZFRfY1J2RWFPejlyOUJXVlFkczFGd0VEN0VySkJpZ1x1MDAzZFx1MDAzZCJd")</script><body class="flex min-h-screen flex-col"><header class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"><div class="mx-auto w-full max-w-screen-xl"><style type=text/css media=screen>#fastSearch{width:100%;margin:0 15px;max-width:235px;position:relative;transition:max-width .2s ease-in-out}#fastSearch.active{max-width:550px}#fastSearch .search-wrapper{position:relative}#fastSearch .search-wrapper .svg-inline--fa{top:50%;left:5px;color:#555;font-size:14px;position:absolute;transform:translateY(-50%)}#fastSearch .search-wrapper input{width:100%;outline:none;font-size:13px;border-radius:3px;padding:3px 10px 3px 25px;border:1px solid #e5e7eb;background-color:transparent}#searchResults{left:0;top:100%;opacity:0;width:100%;z-index:999;overflow-y:auto;position:absolute;visibility:hidden;border-style:solid;border-color:#e5e7eb;background-color:#fff;border-width:0 1px 1px;max-height:calc(100vh - 65px)}#searchResults>li{list-style:none;padding:10px 15px;border-bottom:1px dotted #000}#searchResults li>a{display:block}#searchResults .title{font-size:14px;font-weight:700}#searchResults .meta{color:#777;font-size:13px}#searchResults .description{font-size:12px;margin:10px 0 0;font-style:italic}#searchResults>li:last-child{border:0}#searchResults .not-found{font-size:13px;padding:10px 15px}#fastSearch.active #searchResults{opacity:1;visibility:visible}#fastSearch.active .search-wrapper .svg-inline--fa{color:var(--color-eureka)}#fastSearch.active input{border-radius:3px 3px 0 0}.dark #fastSearch input,.dark #fastSearch #searchResults{border-color:var(--color-tertiary-bg)}.dark #fastSearch #searchResults{background-color:var(--color-secondary-bg)}.dark #searchResults>li{border-color:var(--color-tertiary-bg)}@media screen and (max-width:768px){#fastSearch{width:100%;max-width:100%;margin:10px 0 0}#fastSearch.active{max-width:100%}#fastSearch.active #searchResults{max-height:320px}}</style><script>let storageColorScheme=localStorage.getItem("lightDarkMode");((storageColorScheme=="Auto"||storageColorScheme==null)&&window.matchMedia("(prefers-color-scheme: dark)").matches||storageColorScheme=="Dark")&&document.getElementsByTagName("html")[0].classList.add("dark")</script><nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0"><a href=/ class="me-6 text-primary-text text-xl font-bold">Hui.Ke</a>
+<button id=navbar-btn class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+<i class="fas fa-bars"></i></button><div id=target class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20"><div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0"><a href=/posts/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Posts</a>
+<a href=/docs/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 selected-menu-item me-4">Docs</a>
+<a href=/categories/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Categories</a>
+<a href=/series/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Series</a>
+<a href=/tags/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Tags</a>
+<a href=/love/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Love</a>
+<a href=/about/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">About</a></div><div id=fastSearch><div class=search-wrapper><input id=searchInput autocomplete=off placeholder=搜索较慢，耐心等待~o(*^▽^*)┛……【黑客朋友们别试了没注入点ヾ(￣▽￣)Bye~Bye~】 tabindex=0>
+<i class="fa-solid fa-magnifying-glass"></i></div><ul id=searchResults></ul></div><script async src=https://lib.baomitu.com/fuse.js/7.0.0/fuse.min.js></script><script async src=/js/fastsearch.js></script><div class=flex><div class="relative pt-4 md:pt-0"><div class="cursor-pointer hover:text-eureka" id=lightDarkMode><i class="fas fa-adjust"></i></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id=is-open></div><div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40" id=lightDarkOptions><span class="px-4 py-1 hover:text-eureka" name=Light>Light</span>
+<span class="px-4 py-1 hover:text-eureka" name=Dark>Dark</span>
+<span class="px-4 py-1 hover:text-eureka" name=Auto>Auto</span></div></div></div></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id=is-open-mobile></div></nav><script>let element=document.getElementById("lightDarkMode");storageColorScheme==null||storageColorScheme=="Auto"?document.addEventListener("DOMContentLoaded",()=>{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",switchDarkMode)}):storageColorScheme=="Light"?(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","sun"),element.firstElementChild.classList.add("fa-sun")):storageColorScheme=="Dark"&&(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","moon"),element.firstElementChild.classList.add("fa-moon")),document.addEventListener("DOMContentLoaded",()=>{getcolorscheme(),switchBurger()})</script></div></header><main class="grow pt-16"><div class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8"><div class=lg:pt-12><div class="flex flex-col md:flex-row bg-secondary-bg rounded"><div class="md:w-1/4 lg:w-1/5 border-e"><div class="sticky top-16 pt-6"><div id=sidebar-title class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text"><span class=font-semibold>Table of Contents</span>
+<i class='fas fa-caret-right ms-1'></i></div><div id=sidebar-toc class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent"><div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded"><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/>RHCSS（Red Hat Certified Security Specialist）</a></div><ul class=ps-6><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/11/>RH415 v7.5 综合练习题解题思路</a></div></li><li class=py-2><div><a class="text-eureka hover:text-eureka" href=https://www.hui.ke/docs/rhcss/10/>RH415 v7.5 综合练习题解</a></div></li><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/5/>Controlling Authentication wiht PAM —— 通过 PAM 控制身份认证</a></div></li><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/4/>Restricting USB Device Access —— 限制 USB 设备访问</a></div></li><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/3/>Protecting Data with LUKS and NBDE —— 使用 LUKS 和 NBDE 保护数据</a></div></li><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/2/>Automating Configuration and Remediation with Ansible —— 使用 Ansible 自动化配置和修复</a></div></li><li class=py-2><div><a class=hover:text-eureka href=https://www.hui.ke/docs/rhcss/1/>Managing Security and Risk —— 管理安全性和风险</a></div></li></ul></div></div></div><div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8"><div class=flex><div class="w-full lg:w-3/4 px-6"><article class=prose><h1 class=mb-4>RH415 v7.5 综合练习题解</h1><div class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"><div class="me-6 my-2"><i class="fas fa-calendar me-1"></i>
+<span>2023-03-23</span></div><div class="me-6 my-2"><i class="fa-solid fa-pen-to-square me-1"></i>
+<span>2023-03-24</span></div><div class="me-6 my-2"><i class="fas fa-clock me-1"></i>
+<span>8 min read</span></div><div class="me-6 my-2"><i class="fas fa-folder me-1"></i>
+<a href=https://www.hui.ke/categories/it/ class=hover:text-eureka>IT</a></div><div class="me-6 my-2"><i class="fas fa-th-list me-1"></i>
+<a href=https://www.hui.ke/series/linux/ class=hover:text-eureka>Linux</a></div><div class="me-6 my-2"><i class="fa-solid fa-eye me-1"></i>
+<span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> Hits</div></div><p>  本文是 RHCSS 培训课程 RH415 v7.5 的考试练习题，将此题库练习十遍，基本可通过考试。</p><h2 id=练习前准备>练习前准备</h2><pre><code class=language-bash>[kiosk@foundation0 ~]$ rht-vmctl fullreset all     # 重置所有 kvm
+[kiosk@foundation0 ~]$ su -     # 提权至 root
+[root@foundation0 ~]# cd /home/kiosk/backup/ex415v7.5-prepare     # 进入练习环境准备目录 /home/kiosk/backup/ex415v7.5-prepare
+[root@foundation0 ex415v7.5-prepare]# sh ex415v7.5-prepare.sh     # 运行练习环境准备脚本 ex415v7.5-prepare.sh
+</code></pre><h2 id=create-an-encrypted-volume---创建一个加密卷rootservera>Create an encrypted volume - 创建一个加密卷【root@servera】</h2><pre><code class=language-bash>lvcreate -l+100%FREE treasure -n wallet     # 底层块设备逻辑卷 wallet 使用 treasure 卷组中的所有可用空间
+cryptsetup luksFormat /dev/mapper/treasure-wallet     # 此处按提示输入大写“YES”，并使用密钥 RedHat2022 加密
+cryptsetup luksDump /dev/mapper/treasure-wallet     # 查看 /dev/mapper/treasure-wallet 头部信息
+cryptsetup luksOpen /dev/mapper/treasure-wallet cryptedtest     # 手动打开 LUKS 加密分区，并将其映射至 /dev/mapper 中的逻辑设备
+lsblk --path     # 列出所有可用块设备
+mkfs.ext4 /dev/mapper/cryptedtest     # 设备被 ext4 格式化
+# 启动时，设备不需要自动解密或挂载
+mkdir /mnt/cryptedtest     # 创建加密块挂载目录 /mnt/cryptedtest
+mount /dev/mapper/cryptedtest /mnt/cryptedtest/     # 挂载加密块 /dev/mapper/cryptedtest 至挂载目录 /mnt/cryptedtest
+df -Th | grep /mnt/cryptedtest     # 查看 /mnt/cryptedtest 空间占用情况
+echo &quot;ex415test&quot; &gt; /mnt/cryptedtest/test.txt     # 设备中包含文本文件 test.txt，内容是 ex415test
+</code></pre><h2 id=manage-luks-keys---管理-luks-密钥rootservera>Manage LUKS keys - 管理 LUKS 密钥【root@servera】</h2><p>servera 上的 LUKS 设备 SKUL_VG/Secure_LV 解密密码为：RedHat4Security，但是此密码已经不再安全。</p><pre><code class=language-bash>cryptsetup luksDump /dev/mapper/SKUL_VG-Secure_LV     # 查看 /dev/mapper/SKUL_VG-Secure_LV 头部信息，可以看到 0 号槽位有一个老密码
+cryptsetup luksAddKey /dev/mapper/SKUL_VG-Secure_LV     # 增加一个 LUKS 密码
+    Enter any existing passphrase: &lt;old_passphrase&gt;     # 解密密码为：RedHat4Security
+    Enter new passphrase for key slot: &lt;new_passphrase&gt;     # 设置新密码为：RedHat2022
+# 使用老密码不再能够解密
+cryptsetup luksKillSlot /dev/mapper/SKUL_VG-Secure_LV 0     # 删除第 0 号槽位的老密码
+    Enter any remaining passphrase: &lt;new_passphrase&gt;     # 输入新密码 RedHat2022
+cryptsetup luksDump /dev/mapper/SKUL_VG-Secure_LV     # 再次查看 /dev/mapper/SKUL_VG-Secure_LV 头部信息，可以发现已经移除了 0 号槽位的老密码
+</code></pre><h2 id=configure-nbde---配置-nbde>Configure NBDE - 配置 NBDE</h2><h3 id=rootserverd>root@serverd</h3><pre><code class=language-bash># 配置 serverd 成为 NBDE 密钥服务器
+yum install -y tang     # 安装 tang 软件包
+systemctl enable --now tangd.socket      # 激活 tangd 服务 socket 并设置开机自启
+systemctl status tangd.socket     # 查看 tangd 服务 socket 状态
+systemctl enable --now firewalld.service     # 激活 firewalld 服务 socket 并设置开机自启
+systemctl status firewalld.service     # 查看 firewalld 服务 socket 状态
+firewall-cmd --permanent --add-service=http     # 防火墙放通 Tang 服务器所需的 http（80/TCP）端口
+firewall-cmd --reload     # 重启防火墙
+firewall-cmd --list-all | grep http     # 列举所有 http（80/TCP）端口的防火墙策略
+</code></pre><h3 id=rootservera>root@servera</h3><pre><code class=language-bash>lvcreate -L 256MiB SECURITY_VG -n Clevis_LV     # 在 vg SECURITY_VG 中创建 256MB 的逻辑卷 Clevis_LV
+# 利用此逻辑卷，创建一个名为 RH415_data、密码为 RedHat2022 的加密设备
+cryptsetup luksFormat /dev/mapper/SECURITY_VG-Clevis_LV     # 此处按提示输入大写“YES”，并使用密钥 RedHat2022 加密
+cryptsetup luksOpen /dev/mapper/SECURITY_VG-Clevis_LV RH415_data     # 手动打开 LUKS 加密分区，并将其映射至 /dev/mapper 中的逻辑设备
+mkfs.ext4 /dev/mapper/RH415_data     # 设备被 ext4 格式化
+# 将加密设备 RH415_data 的 NBDE 密钥服务器的密码设置为 RedHat2022 并配合 NBDE 将加密设备 RH415_data 永久挂载到 /mnt/data
+mkdir /mnt/data     # 创建加密块挂载目录 /mnt/data
+mount /dev/mapper/RH415_data /mnt/data     # 挂载加密块 /dev/mapper/RH415_data 至挂载目录 /mnt/data
+df -Th | grep RH415_data     # 查看 RH415_data 空间占用情况
+echo &quot;ex415test&quot; &gt; /mnt/data/test.txt     # 挂载点中包含文本文件 test.txt，内容是 ex415test
+yum install -y clevis*     # 安装 clevis* 相关软件包
+clevis luks bind -d /dev/mapper/SECURITY_VG-Clevis_LV tang '{&quot;url&quot;:&quot;http://serverd.lab.example.com&quot;}'     # 连接 tang 服务器
+systemctl enable clevis-luks-askpass.path     # 启用 clevis-luks-askpass.path 以防止非根分区被提示输入密码
+vim /etc/crypttab     # 输入如下一行并保存
+RH415_data  /dev/mapper/SECURITY_VG-Clevis_LV  none  _netdev
+vim /etc/fstab     # 输入如下一行并保存
+/dev/mapper/RH415_data /mnt/data  ext4  _netdev  0 0
+reboot     # 打开 servera 控制台检查启动过程是否具有 LUKS 设备的自动解密与挂载的过程
+</code></pre><h2 id=configure-intrusion-detection---配置-aiderootservera>Configure intrusion detection - 配置 AIDE【root@servera】</h2><pre><code class=language-bash># 下载 http://content.example.com/rh415.cfg 并将其放置在 /etc 中
+cd /etc     # 切换至 /etc 目录
+wget http://content.example.com/rh415.cfg     # 下载 http://content.example.com/rh415.cfg
+chown root:root rh415.cfg     # 更改 rh415.cfg 文件属组为 root.root
+chmod 0664 rh415.cfg     #  更改 rh415.cfg 文件权限为 0664
+yum install -y aide     # 安装 aide 软件包
+cp /etc/aide.conf /tmp     # 复制 /etc/aide.conf 文件至 /tmp 目录
+sed -i '99,312d' /etc/aide.conf     # 删除与 rh415.cfg 文件无关的所有配置
+# AIDE 必须监控文件 /etc/rh415.cfg 的权限、所有权和时间戳变化
+vim /etc/aide.conf     # 输入如下一行并保存
+/etc/rh415.cfg    EVERYTHING     # 监控 /etc/rh415.cfg 文件的 EVERYTHING
+aide --init     # 初始化 aide 数据库
+mv /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz     #  AIDE 数据库位于 /var/lib/aide/aide.db.gz 中
+aide --check     # 检查文件系统更改，显示如下两行表示正常
+    AIDE, version 0.15.1
+    ### All files match AIDE database. Looks okay!
+</code></pre><h2 id=monitor-file-activity---监控文件活动rootservera>Monitor file activity - 监控文件活动【root@servera】</h2><pre><code class=language-bash>echo &quot;-w /root/rockentries.txt -p rwxa -k rh415&quot; &gt;&gt; /etc/audit/rules.d/audit.rules     # 配置监控 /root/rockentries.txt, 关键字为 rh415，以监控该文件上的任何读取、写入、执行和追加事件
+augenrules --load     # 加载上述审计规则
+cat /etc/audit/audit.rules     # 查看 audit 审计规则是否包含上述配置
+cat /root/rockentries.txt     # cat 命令触发 auditd 审计事件
+ausearch -i -k rh415     # 输出 key 为 rh415 的日志
+</code></pre><h2 id=monitor-file-modification---监控文件修改可选题rootnode2>Monitor file modification - 监控文件修改（可选题）【root@node2】</h2><pre><code class=language-bash>grep recipes /etc/group     # 在 /etc/group 中搜索 recipes 组
+    recipes : x : 5000:george,michael
+id george     # 查看 george 用户 id 信息
+    uid=1201(george) gid=1201(george) groups=1201(george),5000(recipes)
+id michael     # 查看 michael 用户 id 信息
+    uid=1202(michael) gid=1202(michael) groups=1202(michael),5000(recipes)
+vim /etc/audit/rules.d/audit.rules     # 编辑 audit 审计规则
+    -w /topsecret.txt -p w -k vault     # 审计 topsecret.txt 文件的写入，审计过滤关键字为 vault
+    -a always,exit -F auid=1201 -F auid=1202 -F auid!=0 -F uid!=0 -F euid!=0     # 对用户 george 与 michael 进行审计，用户 root 除外
+augenrules --load     # 加载上述审计规则
+cat /etc/audit/audit.rules     # 查看 audit 审计规则是否包含上述配置
+</code></pre><h2 id=monitor-program-execution---监控程序执行可选题rootserverb>Monitor program execution - 监控程序执行（可选题）【root@serverb】</h2><pre><code class=language-bash>which payroll     # 查看 payroll 指令的绝对路径
+    /usr/local/bin/payroll
+id bob     # 查看 bob 用户 id 信息
+    uid=1001(bob) gid=1001(bob) groups=1001(bob)
+id mary     # 查看 mary 用户 id 信息
+    uid=1002(mary) gid=1002(mary) groups=1002(mary)
+id fred     # 查看 fred 用户 id 信息
+    uid=1003(fred) gid=1003(fred) groups=1003(fred)
+vim /etc/audit/rules.d/audit.rules     # 编辑 audit 审计规则
+    -w /usr/local/bin/payroll -p x -k payday     # 审计 /usr/local/bin/payroll 的执行，审计过滤关键字为 payday
+    -a always,exit -F auid=1001 -F auid=1002 -F auid!=1003 -F uid!=1003 -F euid!=1003     # 对用户 bob 与 mary 进行审计，用户 fred 除外
+augenrules --load     # 加载上述审计规则
+cat /etc/audit/audit.rules     # 查看 audit 审计规则是否包含上述配置
+</code></pre><h2 id=track-failed-logins---跟踪失败的登录rootservera--serverb>Track failed logins - 跟踪失败的登录【root@servera & serverb】</h2><pre><code class=language-bash>authconfig --enablefaillock --faillockargs=&quot;deny=4 fail_interval=120 unlock_time=120&quot; --update     # 当对非 root 用户的 4 次连续失败登录后（本地登录或 ssh 登录），用户锁定 2 分钟
+grep pam_faillock /etc/pam.d/system-auth-ac     # 查看 /etc/pam.d/system-auth-ac 中 pam_faillock 模块相关条目
+grep pam_faillock /etc/pam.d/password-auth-ac     # 查看 /etc/pam.d/password-auth-ac 中 pam_faillock 模块相关条目
+# 验证：使用普通用户账号连续4次登录失败被锁定2分钟
+</code></pre><h2 id=restrict-usb-devices---限制-usb-设备rootnode2>Restrict USB devices - 限制 USB 设备【root@node2】</h2><pre><code class=language-bash>yum install -y usbguard usbutils udisks2     # 安装 usbguard、usbutils、udisks2 软件包
+usbguard generate-policy &gt; /etc/usbguard/rules.conf     # 生成默认的 USB 限制规则
+cat /etc/usbguard/rules.conf     # 查看默认 USB 限制规则
+systemctl enable --now usbguard.service     # 激活 usbguard 服务并设置开机自启
+lsusb -v | less     # 以 less 分页显示 USB 信息
+# GREG-456 设备位于 Bus 001 Device 003: ID 46f4:0001
+udisksctl status
+    MODEL                     REVISION  SERIAL               DEVICE
+    --------------------------------------------------------------------------
+    VirtIO Disk                                              vda     
+    QEMU QEMU HARDDISK        2.5+      CURTIS-123           sda     
+    QEMU QEMU HARDDISK        2.5+      GREG-456             sdb     
+    QEMU QEMU HARDDISK        2.5+      XYZ-ABC-789          sdc
+parted -s /dev/sdb mklabel msdos     # 给 /dev/sdb 硬盘加上 msdos 标签
+parted -s /dev/sdb mkpart primary ext4 2048s 16383s
+# 使用 fdisk 命令确认起始与终末扇区
+# 使用 fdisk 或 parted 命令分区都可以
+udevadm settle     # 监视 udev 事件队列，并在所有事件全部处理完成之后退出
+mkfs.ext4 -L GREG-456 /dev/sdb1
+blkid | grep sdb1     # 查看 sdb1 块设备文件类型
+mkdir /mnt/usbguard     # 创建加载目录 /mnt/usbguard
+mount /dev/sdb1 /mnt/usbguard     # 挂载 /dev/sdb1 至挂载目录 /mnt/usbguard
+df -Th | grep sdb1     # 查看 sdb1 空间占用情况
+usbguard list-devices     # 列举所有设备
+    6: allow id 1d6b:0002 serial &quot;0000:00:04.0&quot; name &quot;EHCI Host Controller&quot; hash &quot;...&quot; 
+       parent-hash &quot;VC8ZB6FZ51WMN42QA3CqGvK9+eLDu4jpdgzSwLFn+fs=&quot; via-port &quot;usb1&quot; with-interface 09:00:00
+    7: allow id 46f4:0001 serial &quot;CURTIS-123&quot; name &quot;QEMU USB HARDDRIVE&quot; hash &quot;...&quot;
+       parent-hash &quot;Nk/GTsYsILAzeLjPtZg0++medV8vhq/hd1Ew0r9Q/F8=&quot; via-port &quot;1-1&quot; with-interface 08:06:50
+    8: allow id 46f4:0001 serial &quot;GREG-456&quot; name &quot;QEMU USB HARDDRIVE&quot; hash &quot;...&quot; 
+       parent-hash &quot;Nk/GTsYsILAzeLjPtZg0++medV8vhq/hd1Ew0r9Q/F8=&quot; via-port &quot;1-2&quot; with-interface 08:06:50
+    9: allow id 46f4:0001 serial &quot;XYZ-ABC-789&quot; name &quot;QEMU USB HARDDRIVE&quot; hash &quot;...&quot;
+       parent-hash &quot;Nk/GTsYsILAzeLjPtZg0++medV8vhq/hd1Ew0r9Q/F8=&quot; via-port &quot;1-3&quot; with-interface 08:06:50
+    10: allow id 0627:0001 serial &quot;42&quot; name &quot;QEMU USB Tablet&quot; hash &quot;...&quot; 
+       parent-hash &quot;Nk/GTsYsILAzeLjPtZg0++medV8vhq/hd1Ew0r9Q/F8=&quot; via-port &quot;1-4&quot; with-interface 03:00:00
+usbguard block-device -p 7     # block 阻止第 7 个 设备授权
+usbguard reject-device -p 9     # reject 取消第 9 个 设备授权并移除该设备
+usbguard list-devices     # 再次列举所有设备
+cat /etc/usbguard/rules.conf     # 确认 usbguard 规则
+vim /etc/usbguard/usbguard-daemon.conf     # 编辑 USBGuard 守护进程配置文件
+    InsertedDevicePolicy=block     # 插入的新设备默认为 block 阻止
+    IPCAllowedUsers=root     # 守护进程接受来自 root 的 IPC 连接
+    AuditBackend=LinuxAudit     # 日志记录使用 Linux Audit
+usbguard add-user usbadmin --policy=list --exceptions=listen --devices=list,listen     # 允许 usbadmin 用户列举 USB 设备、侦听异常事件，并列举 USB 授权策略等
+</code></pre><h2 id=configure-login-access-control---配置登录访问控制rootserverd>Configure login access control - 配置登录访问控制【root@serverd】</h2><pre><code class=language-bash>vim /etc/security/access.conf     # 修改登陆访问控制配置文件 /etc/security/access.conf
+    +:root:ALL     # root 用户可以从任何地方 SSH 登录 serverd
+    +:kmoon:172.25.250.11     # kmoon 用户只可以使用 SSH 从 serverb 登录 serverd
+    -:ALL:ALL     # 其他所有用户均不允许登录 serverd
+authconfig --enablepamaccess --update     # enable pam_access.so module
+</code></pre><h2 id=configure-password-policy---配置密码策略rootserverb>Configure password policy - 配置密码策略【root@serverb】</h2><pre><code class=language-bash>vim /etc/security/pwquality.conf     # 修改密码策略配置文件 /etc/security/pwquality.conf
+    minlen = 12     # 密码最小长度 12 位
+    lcredit = -4     # 小写字符最少 4 位
+    ucredit = -4     # 大写字符最少 4 位
+    dcredit = -3     # 数字字符最少 3 位
+    ocredit = -1     # 特殊字符最少 1 位
+# 用户最多只有 5 次机会尝试输入密码
+vim /etc/pam.d/system-auth     # 修改如下一行并保存
+    password    requisite     pam_pwquality.so try_first_pass local_users_only retry=5 authtok_type=
+vim /etc/pam.d/password-auth     # 修改如下一行并保存
+    password    requisite     pam_pwquality.so try_first_pass local_users_only retry=5 authtok_type=
+</code></pre><h2 id=configure-auditing---配置审计功能rootserverb>Configure auditing - 配置审计功能【root@serverb】</h2><pre><code class=language-bash>cp /usr/share/doc/audit-2.8.1/rules/30-stig.rules /etc/audit/rules.d/
+ls -l /etc/audit/rules.d/30-stig.rules
+vim /etc/audit/rules.d/audit.rules
+    -a never,user -F subj_type=crond_t     # 永不审计 crond 服务（守护进程）
+    # man audit.rules 命令搜索 never 与 user
+    # never: never to audit
+    # user: userspace
+    # crond daemon as progress has crond_t domain
+augenrules --load     # 加载上述审计规则
+vim /etc/audit/auditd.conf     # 编辑 audit 审计规则
+    freq = 16384     # Auditd 的 backlog buffer 为 16384
+    # 如果磁盘空间低于 400MB 发送邮件给 root
+    space_left = 400
+    space_left_action = EMAIL
+    admin_space_left = 400
+    admin_space_left_action = EMAIL
+reboot     # 重启节点使 auditd 配置生效
+</code></pre><h2 id=enable-selinux---启用-selinuxrootserverc>Enable SELinux - 启用 SELinux【root@serverc】</h2><p>HTML content: http://serverc:8001</p><p>CGI script content: http://serverc:8001/cgi-bin/hello.cgi</p><p>配置 serverc：SELinux 设为 Enforcing 模式</p><pre><code class=language-bash>getenforce
+    Disabled
+vim /etc/selinux/config
+    SELINUX=enforcing
+reboot
+# 练习环境: 打开 serverc 控制台 --&gt; 按 &quot;e&quot; --&gt; 修改只保留 console=tty0 该行最后添加 rd.break --&gt; Ctrl-x
+# 考试环境: 直接添加 rd.break
+# switch_root# mount -o remount,rw /sysroot
+# switch_root# chroot /sysroot
+# sh# touch /.autorelabel
+# sh# exit
+# switch_root# exit
+# 稍等片刻系统切换 Disabled 模式的 SELinux 为 Enforcing 模式的 SELinux
+semanage port -a -t http_port_t -p tcp 8001     # 防火墙允许 ssh 和 8001 端口
+systemctl enable --now firewalld.service
+firewall-cmd --permanent --add-port=8001/tcp
+firewall-cmd --reload
+systemctl restart httpd.service
+curl http://serverc:8001/     # 打开报错
+ausearch -i -m AVC -ts boot | grep path
+    type=AVC ... avc:  denied  { getattr } for  pid=1925 comm=httpd path=/custom/www/html/index.html 
+    ... scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:default_t:s0 ...
+    # 确认 apache httpd 的审计状态
+ls -ldZ /custom
+semanage fcontext -a -t httpd_sys_content_t '/custom(/.*)?'
+restorecon -R -v /custom
+ls -ldZ /custom
+    drwxr-xr-x. root root system_u:object_r:httpd_sys_content_t:s0 /custom
+chcon -R -t httpd_sys_script_exec_t /custom/www/cgi-bin
+curl http://serverc:8001/
+    It works!
+curl http://serverc:8001/cgi-bin/hello.cgi
+    Hello World
+</code></pre><h2 id=configure-selinux-confined-users---配置-selinux-受限用户rootserverc>Configure SELinux confined users - 配置 SELinux 受限用户【root@serverc】</h2><pre><code class=language-bash>getenforce 
+    Enforcing
+semanage login -a -s sysadm_u sandra
+semanage user sysadm_u --add -R secadm_r --add -R sysadm_r
+setsebool -P ssh_sysadm_login on
+# sysadm_u 具有 ssh_sysadm_login 布尔值
+# 启用该布尔值以允许 sysadm_u 通过 ssh 登录
+semanage login -m -s user_u -r s0 __default__
+# 修改 __default__ selinux 用户
+semanage login -a -s sysadm_u sandra
+# 修改回 sysadm_u
+usermod -Z user_u sarah
+usermod -Z user_u sally
+semanage login -a -s staff_u sarah
+semanage login -a -s staff_u sally 
+echo &quot;sarah  ALL=(ALL)  NOPASSWD: ALL&quot; &gt; /etc/sudoers.d/sarah
+echo &quot;sally  ALL=(ALL)  NOPASSWD: ALL&quot; &gt; /etc/sudoers.d/sally
+echo &quot;sandra  ALL=(ALL)  NOPASSWD: ALL&quot; &gt; /etc/sudoers.d/sandra
+semanage login -l
+    Login Name           SELinux User         MLS/MCS Range        Service
+    __default__          user_u               s0                   *
+    root                 unconfined_u         s0-s0:c0.c1023       *
+    sally                staff_u              s0-s0:c0.c1023       *
+    sandra               sysadm_u             s0                   *
+    sarah                staff_u              s0-s0:c0.c1023       *
+    system_u             system_u             s0-s0:c0.c1023       *
+    # 确认所有的 linux 用户映射为 selinux 用户
+# 验证：
+# 1. 使用 sarch, sally 与 sandra 用户通过 ssh 登录 serverc
+# 2. 登录成功后使用 'id -Z' 命令确认已映射为 selinux 用户
+</code></pre><h2 id=configure-ansible---配置-ansible>Configure Ansible - 配置 Ansible</h2><h3 id=rootserverd-1>root@serverd</h3><pre><code class=language-bash>yum install -y ansible     # 安装 ansible 软件包
+ssh-copy-id student@serverb     # 将公钥拷贝至 serverb 的 student 账户
+su - student     # 切换至 student
+ssh-keygen     # 使用 ssh-keygen 生成 ssh 密钥对
+ssh-copy-id student@serverb     # 将公钥拷贝至 serverb 的 student 账户
+vim ansible.cfg     # 编辑 ansible 配置文件 ansible.cfg
+    [defaults]
+    # 通用配置
+    inventory = ./inventory
+    # 主机清单文件为 ./inventory
+    remote_user = student
+    # ansible 受管主机登陆用户为 student
+    log_path = ansible.log
+    # 日志记录文件为 ansible.log
+    
+    [privilege_escalation]
+    # 提权配置
+    become = False
+    # 不允许提权
+    become_user = root
+    # 提权至 root
+    become_method = sudo
+    # 提权使用命令
+    become_ask_pass = False
+    # sudo 免密提权
+vim inventory     # 编辑 ansible 主机清单 inventory
+    [servers]     # 主机组
+    serverb     # 受管主机
+</code></pre><h3 id=rootserverb>root@serverb</h3><pre><code class=language-bash>echo &quot;student  ALL=(ALL)  NOPASSWD: ALL&quot; &gt; /etc/sudoers.d/student     # 配置 student 免密提权
+su - student     # 切换至 student
+sudo su -     # 提权至 root
+</code></pre><h3 id=studentserverd>student@serverd</h3><pre><code class=language-bash>ansible all -m ping     # 测试所有受管主机连通性
+    serverb | SUCCESS =&gt; {     # serverb 测试成功
+      &quot;changed&quot;: false,     # 无变化
+      &quot;ping&quot;: &quot;pong&quot;     # 与控制节点通信正常
+    }
+ansible all -m command -a 'fdisk -l' -b
+ansible all -m command -a 'fdisk -l'
+    serverb | FAILED | rc=2 &gt;&gt;     # serverb 运行失败
+    [Errno 2] No such file or directory     # 报错无此文件或目录
+</code></pre><h2 id=generate-a-compliance-report---生成合规扫描报告ssh--x-rootworkstation>Generate a compliance report - 生成合规扫描报告【ssh -X root@workstation】</h2><pre><code class=language-bash>yum install -y *scap*     # 安装 *scap* 软件包
+scap-workbench &amp;
+    RHEL7 --&gt; Load Content --&gt; Profile --&gt; Standard System Security Profile(13) --&gt; 
+    Scan --&gt; Save Result --&gt; HTML Report --&gt; /root/scan-report.html --&gt; Save Result --&gt; 
+    XCCDF Results --&gt; /root/scan-results.xml
+ls -lh
+</code></pre><h2 id=customize-a-compliance-profile---自定义合规性配置文件ssh--x-rootworkstation>Customize a compliance profile - 自定义合规性配置文件【ssh -X root@workstation】</h2><pre><code class=language-bash>scap-workbench &amp;
+    RHEL7 --&gt; Load Content --&gt; Profile --&gt; Standard System Security Profile(13) --&gt; 
+    Customize --&gt; New Profile ID: xccdf_org.ssgproject.content_profile_standard_ACME --&gt; 
+    OK --&gt; Deselect Everything --&gt; Install firewalld + Verify firewalld Enabled + Disable vsftpd Service 
+    + Telnet + Ensure auditd Collects Information on the Use of Privileged Commands - sudo --&gt; 
+    OK --&gt; File --&gt; Save Customization Only --&gt; /root/ACME-tailoring.xml --&gt; Save
+ls -lh /root/ACME-tailoring.xml
+</code></pre><h2 id=remediate-a-system---修复系统ssh--x-rootworkstation>Remediate a system - 修复系统【ssh -X root@workstation】</h2><pre><code class=language-bash>scap-workbench &amp;
+    RHEL7 --&gt; Load Content --&gt; File --&gt; Load Customization File --&gt; /root/ACME-tailoring.xml --&gt; 
+    Scan --&gt; Save Result --&gt; XCCDF Results --&gt; /root/tailoring-results.xml --&gt; Save
+ls -lh /root/tailoring-results.xml
+scap-workbench &amp;
+    RHEL7 --&gt; Load Content --&gt; File --&gt; Load Customization File --&gt; /root/ACME-tailoring.xml --&gt; 
+    Generate remediation role --&gt; ansible --&gt; /root/ACME-remediation.yml
+ls -lh /root/ACME-remediation.yml
+</code></pre></article><div class=my-4><a href=https://www.hui.ke/tags/rhcss/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#RHCSS</a>
+<a href=https://www.hui.ke/tags/%E9%A2%98%E5%BA%93/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#题库</a></div><div class=py-2><div class="my-8 flex flex-col items-center md:flex-row"><a href=https://www.hui.ke/authors/hui.ke/ class="md:me-4 text-primary-text h-24 w-24"><img src=https://www.hui.ke/bagua.webp class="bg-primary-bg w-full rounded-full" alt=Avatar></a><div class="mt-4 w-full md:mt-0 md:w-auto"><a href=https://www.hui.ke/authors/hui.ke/ class="mb-2 block border-b pb-1 text-lg font-bold"><h3>Hui.Ke</h3></a><span class="block pb-2">❤ Cyber Security | Safety is a priority.</span>
+<a href=mailto:qaq@gov.moe class=me-2><i class="fas fa-envelope"></i>
+</a><a href="https://wpa.qq.com/msgrd?v=3&amp;uin=3199731997" class=me-2><i class="fab fa-qq"></i>
+</a><a href=/images/anquanyunying.webp class=me-2><i class="fab fa-weixin"></i></a></div></div></div><div class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"><div><span class="text-primary-text block font-bold">Previous</span>
+<a href=https://www.hui.ke/docs/rhcss/11/ class=block>RH415 v7.5 综合练习题解题思路</a></div><div class="mt-4 md:mt-0 md:text-right"><span class="text-primary-text block font-bold">Next</span>
+<a href=https://www.hui.ke/docs/rhcss/5/ class=block>Controlling Authentication wiht PAM —— 通过 PAM 控制身份认证</a></div></div><div id=valine-comments class=mt-4></div><script defer src="https://lib.baomitu.com/valine/1.5.1/Valine.min.js%25!%28EXTRA%20string=1.5.1%29" crossorigin></script><script>document.addEventListener("DOMContentLoaded",function(){new Valine({el:"#valine-comments",appId:"BQnVqWIiq78AdqwyhvBVAa3y-MdYXbMMI",appKey:"RKg5By312YjM8rU6WkkfK9IN",recordIP:"true",serverURLs:"https://valine.thanks.eu.org",visitor:"true"})})</script></div><div class="hidden lg:block lg:w-1/4"><div class="bg-secondary-bg
+prose sticky top-16 z-10 hidden px-6 py-4 lg:block"><h3>On This Page</h3></div><div class="sticky-toc
+border-s
+hidden px-6 pb-6 lg:block"><nav id=TableOfContents><ul><li><a href=#练习前准备>练习前准备</a></li><li><a href=#create-an-encrypted-volume---创建一个加密卷rootservera>Create an encrypted volume - 创建一个加密卷【root@servera】</a></li><li><a href=#manage-luks-keys---管理-luks-密钥rootservera>Manage LUKS keys - 管理 LUKS 密钥【root@servera】</a></li><li><a href=#configure-nbde---配置-nbde>Configure NBDE - 配置 NBDE</a><ul><li><a href=#rootserverd>root@serverd</a></li><li><a href=#rootservera>root@servera</a></li></ul></li><li><a href=#configure-intrusion-detection---配置-aiderootservera>Configure intrusion detection - 配置 AIDE【root@servera】</a></li><li><a href=#monitor-file-activity---监控文件活动rootservera>Monitor file activity - 监控文件活动【root@servera】</a></li><li><a href=#monitor-file-modification---监控文件修改可选题rootnode2>Monitor file modification - 监控文件修改（可选题）【root@node2】</a></li><li><a href=#monitor-program-execution---监控程序执行可选题rootserverb>Monitor program execution - 监控程序执行（可选题）【root@serverb】</a></li><li><a href=#track-failed-logins---跟踪失败的登录rootservera--serverb>Track failed logins - 跟踪失败的登录【root@servera & serverb】</a></li><li><a href=#restrict-usb-devices---限制-usb-设备rootnode2>Restrict USB devices - 限制 USB 设备【root@node2】</a></li><li><a href=#configure-login-access-control---配置登录访问控制rootserverd>Configure login access control - 配置登录访问控制【root@serverd】</a></li><li><a href=#configure-password-policy---配置密码策略rootserverb>Configure password policy - 配置密码策略【root@serverb】</a></li><li><a href=#configure-auditing---配置审计功能rootserverb>Configure auditing - 配置审计功能【root@serverb】</a></li><li><a href=#enable-selinux---启用-selinuxrootserverc>Enable SELinux - 启用 SELinux【root@serverc】</a></li><li><a href=#configure-selinux-confined-users---配置-selinux-受限用户rootserverc>Configure SELinux confined users - 配置 SELinux 受限用户【root@serverc】</a></li><li><a href=#configure-ansible---配置-ansible>Configure Ansible - 配置 Ansible</a><ul><li><a href=#rootserverd-1>root@serverd</a></li><li><a href=#rootserverb>root@serverb</a></li><li><a href=#studentserverd>student@serverd</a></li></ul></li><li><a href=#generate-a-compliance-report---生成合规扫描报告ssh--x-rootworkstation>Generate a compliance report - 生成合规扫描报告【ssh -X root@workstation】</a></li><li><a href=#customize-a-compliance-profile---自定义合规性配置文件ssh--x-rootworkstation>Customize a compliance profile - 自定义合规性配置文件【ssh -X root@workstation】</a></li><li><a href=#remediate-a-system---修复系统ssh--x-rootworkstation>Remediate a system - 修复系统【ssh -X root@workstation】</a></li></ul></nav></div><script>window.addEventListener("DOMContentLoaded",()=>{enableStickyToc()})</script></div></div></div></div></div><script>document.addEventListener("DOMContentLoaded",()=>{hljs.highlightAll(),changeSidebarHeight(),switchDocToc()})</script></div></div></main><footer class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b"><script async src=/js/click.js></script><div id=poem_ip></div><script type=text/javascript>jinrishici.load(function(e){tags.innerHTML=e.data.matchTags})</script><div><span id=timeDate>载入年天数...</span><span id=times>载入时分秒...</span>
+<script async src=/js/duration.js></script></div><a href=https://www.foreverblog.cn/go.html target=_blank><img src=https://img.foreverblog.cn/wormhole_4_tp.gif alt style=display:inline-block;width:auto;height:32px title=穿梭虫洞-随机访问十年之约友链博客></a>
+<a href=https://www.travellings.cn/go.html target=_blank rel=noopener title=开往-友链接力><img src=https://www.travellings.cn/assets/logo.gif alt=开往-友链接力 style=display:inline-block;width:auto;height:32px></a>
+<a href=https://notbyai.fyi><img src=/images/Written-By-Human-Not-By-AI-Badge-white.svg alt="Written by Human, Not by AI" style=display:inline-block;width:auto;height:42px></a>
+<a href="https://ipw.cn/ipv6webcheck/?site=hui.ke" title=本站支持IPv6访问 target=_blank><img style=display:inline-block;vertical-align:middle alt=本站支持IPv6访问 src=https://static.ipw.cn/icon/ipv6-s1.svg></a><p class="text-sm text-tertiary-text"><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>本站总访问量 <span id=busuanzi_value_site_pv></span> 次
+&#183; 您是本站的第 <span id=busuanzi_value_site_uv></span> 个小伙伴</p><a href="https://travel.moe/go.html?travel=on" target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px title=异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！><img src=https://travel.moe/images/icon/icon64.png style=float:left;width:21px>异次元之旅</a>
+<a href="https://icp.gov.moe/?keyword=20111111" target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px><img src=/images/icon120.png style=float:left;width:22px>萌ICP备20111111号</a>
+<a href="https://beian.mps.gov.cn/#/query/webSearch?code=32050802011517" rel=noreferrer target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px><img src=/images/备案图标.png style=float:left;width:20px>苏公网安备 32050802011517号</a>
+<script async src=/js/tab.js></script><div id=cc-myssl-id style=position:fixed;right:0;bottom:0;width:65px;height:65px;z-index:99><a href="https://myssl.com/hui.ke?from=mysslid"><img src=https://static.myssl.com/res/images/myssl-id.png alt style=width:100%;height:100%></a></div><script async type=text/javascript src=https://cdn.ywxi.net/js/1.js></script></div></div></footer></body></html>
