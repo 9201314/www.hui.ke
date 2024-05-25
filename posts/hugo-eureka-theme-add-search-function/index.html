@@ -1,0 +1,347 @@
+<!doctype html><html lang=en dir=ltr><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Hugo Eureka 主题增加搜索功能 | Hui.Ke</title>
+<meta name=generator content="Hugo Eureka 0.9.3"><link rel=stylesheet href=https://www.hui.ke/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css><script defer src=https://www.hui.ke/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js></script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" as=style onload='this.onload=null,this.rel="stylesheet"'><link rel=stylesheet href=https://lib.baomitu.com/highlight.js/11.7.0/styles/vs.min.css><script defer src=https://lib.baomitu.com/highlight.js/11.7.0/highlight.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/bash.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/ini.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/javascript.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/json.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/php.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/python.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/sql.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/x86asm.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/xml.min.js></script><script defer type=text/javascript src=https://lib.baomitu.com/highlight.js/11.7.0/languages/yaml.min.js></script><link rel=stylesheet href=https://www.hui.ke/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css media=print onload='this.media="all",this.onload=null'><script defer type=text/javascript src=https://lib.baomitu.com/font-awesome/6.5.2/js/all.min.js></script><link rel=stylesheet href=https://lib.baomitu.com/KaTeX/0.16.9/katex.min.css><script defer src=https://lib.baomitu.com/KaTeX/0.16.9/katex.min.js></script><script defer src=https://lib.baomitu.com/KaTeX/0.16.9/contrib/auto-render.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script><script defer src=https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js></script><link rel=icon type=image/png sizes=32x32 href=https://www.hui.ke/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_2009_32x32_fill_box_center_3.png><link rel=apple-touch-icon sizes=180x180 href=https://www.hui.ke/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_2009_180x180_fill_box_center_3.png><meta name=description content="  Hugo Eureka 这个主题的原作已经停更好几年了，曾在 GitHub Issue 里回复的将会增加搜索功能也是遥遥无期了😔但是随着博主和博客年龄的增加，内容是越来越多，博客需要一个搜索功能已经是刻不容缓了……"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://www.hui.ke/posts/"},{"@type":"ListItem","position":2,"name":"Hugo Eureka 主题增加搜索功能","item":"https://www.hui.ke/posts/hugo-eureka-theme-add-search-function/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hui.ke/posts/hugo-eureka-theme-add-search-function/"},"headline":"Hugo Eureka 主题增加搜索功能 | Hui.Ke","datePublished":"2024-05-25T14:31:05+08:00","dateModified":"2024-05-25T14:31:05+08:00","wordCount":2284,"author":{"@type":"Person","name":"Hui.Ke"},"publisher":{"@type":"Person","name":"Hui.Ke","logo":{"@type":"ImageObject","url":"https://www.hui.ke/icon.png"}},"description":"\u003cp\u003e  \u003ca href=\u0022https:\/\/github.com\/wangchucheng\/hugo-eureka\u0022\u003eHugo Eureka\u003c\/a\u003e 这个主题的原作已经停更好几年了，曾在 \u003ca href=\u0022https:\/\/github.com\/wangchucheng\/hugo-eureka\/issues\/24#issuecomment-752026714\u0022\u003eGitHub Issue\u003c\/a\u003e 里回复的将会增加搜索功能也是遥遥无期了😔但是随着博主和博客年龄的增加，内容是越来越多，博客需要一个搜索功能已经是刻不容缓了……\u003c\/p\u003e"}</script><meta property="og:title" content="Hugo Eureka 主题增加搜索功能 | Hui.Ke"><meta property="og:type" content="article"><meta property="og:image" content="https://www.hui.ke/icon.png"><meta property="og:url" content="https://www.hui.ke/posts/hugo-eureka-theme-add-search-function/"><meta property="og:description" content="  Hugo Eureka 这个主题的原作已经停更好几年了，曾在 GitHub Issue 里回复的将会增加搜索功能也是遥遥无期了😔但是随着博主和博客年龄的增加，内容是越来越多，博客需要一个搜索功能已经是刻不容缓了……"><meta property="og:locale" content="en"><meta property="og:site_name" content="Hui.Ke"><meta property="article:published_time" content="2024-05-25T14:31:05+08:00"><meta property="article:modified_time" content="2024-05-25T14:31:05+08:00"><meta property="article:section" content="posts"><meta property="article:tag" content="hugo"><meta property="article:tag" content="eureka"><meta property="article:tag" content="搜索"><meta property="og:see_also" content="https://www.hui.ke/posts/synology-docker-install-adguard-home/"><meta property="og:see_also" content="https://www.hui.ke/posts/top-50-web-2022/"><meta property="og:see_also" content="https://www.hui.ke/posts/netsh-vlan-show/"><meta property="og:see_also" content="https://www.hui.ke/posts/owasp-top-10-2021/"><meta property="og:see_also" content="https://www.hui.ke/posts/synology-vmm-schedule/"><meta property="og:see_also" content="https://www.hui.ke/posts/build-redroid/"><meta property="og:see_also" content="https://www.hui.ke/posts/data-security-and-personal-information-protection/"><meta property="og:see_also" content="https://www.hui.ke/posts/regedit-delete-startup-item/"><meta property="og:see_also" content="https://www.hui.ke/posts/ols-wordpress/"><meta property="og:see_also" content="https://www.hui.ke/posts/epidemic-prevention-and-cyber-security/"><meta property="og:see_also" content="https://www.hui.ke/posts/comparison-of-thin-light-laptops/"><meta property="og:see_also" content="https://www.hui.ke/posts/sangfor-pt1/"><meta property="og:see_also" content="https://www.hui.ke/posts/minutes-of-general-manager-xus-meeting-on-monday/"><meta property="og:see_also" content="https://www.hui.ke/posts/my-github-stars/"><meta property="og:see_also" content="https://www.hui.ke/posts/raspberry-pi-motion/"><meta property="og:see_also" content="https://www.hui.ke/posts/transfer-files-with-rsync/"><meta property="og:see_also" content="https://www.hui.ke/posts/comparison-of-iflytek-mice/"><meta property="og:see_also" content="https://www.hui.ke/posts/resolutions-for-vmware-tools-installation-failure/"><meta property="og:see_also" content="https://www.hui.ke/posts/raspberry-pi-intranet-penetration/"><meta property="og:see_also" content="https://www.hui.ke/posts/image-and-video-optimization/"><meta property="og:see_also" content="https://www.hui.ke/posts/ccia-top-50-2020/"><meta property="og:see_also" content="https://www.hui.ke/posts/cdn-nodes/"><meta property="og:see_also" content="https://www.hui.ke/posts/vulfocus-building-guide/"><meta property="og:see_also" content="https://www.hui.ke/posts/build-vulstudy/"><meta property="og:see_also" content="https://www.hui.ke/posts/windows-file-recovery-help/"><meta property="og:see_also" content="https://www.hui.ke/posts/bt-and-trojan/"><meta property="og:see_also" content="https://www.hui.ke/posts/steam-free-games-27/"><meta property="og:see_also" content="https://www.hui.ke/posts/build-trojan/"><meta property="og:see_also" content="https://www.hui.ke/posts/build-taobao-coupon-website/"><meta property="og:see_also" content="https://www.hui.ke/posts/build-ssr/"><meta property="og:see_also" content="https://www.hui.ke/posts/hello-everyone/"><script>!function(e){"use strict";!function(){var i,s=window,o=document,a=e,c="".concat("https:"===o.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=o.createElement("script"),r=o.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",a.d=n,i=function(){s.LA.ids.push(a)},s.LA?s.LA.ids&&i():(s.LA=e,s.LA.ids=[],i()),r.parentNode.insertBefore(n,r)}()}({id:"Jgb8aUbG5e3rqhrs",ck:"Jgb8aUbG5e3rqhrs",autoTrack:!0,hashMode:!0})</script><script>!function(e,t,n,s){var o=t.createElement("script"),i=t.getElementsByTagName("script")[0];o.type="text/javascript",o.crossorigin=!0,o.onload=function(){(new e[s].Monitor).init({id:"K9RugzpZqP1AhgMc",sendSuspicious:!0,sendSpaPv:!0})},i.parentNode.insertBefore(o,i),o.src=n}(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue")</script><body class="flex min-h-screen flex-col"><header class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"><div class="mx-auto w-full max-w-screen-xl"><style type=text/css media=screen>#fastSearch{width:100%;margin:0 15px;max-width:235px;position:relative;transition:max-width .2s ease-in-out}#fastSearch.active{max-width:550px}#fastSearch .search-wrapper{position:relative}#fastSearch .search-wrapper .svg-inline--fa{top:50%;left:5px;color:#555;font-size:14px;position:absolute;transform:translateY(-50%)}#fastSearch .search-wrapper input{width:100%;outline:none;font-size:13px;border-radius:3px;padding:3px 10px 3px 25px;border:1px solid #e5e7eb;background-color:transparent}#searchResults{left:0;top:100%;opacity:0;width:100%;z-index:999;overflow-y:auto;position:absolute;visibility:hidden;border-style:solid;border-color:#e5e7eb;background-color:#fff;border-width:0 1px 1px;max-height:calc(100vh - 65px)}#searchResults>li{list-style:none;padding:10px 15px;border-bottom:1px dotted #000}#searchResults li>a{display:block}#searchResults .title{font-size:14px;font-weight:700}#searchResults .meta{color:#777;font-size:13px}#searchResults .description{font-size:12px;margin:10px 0 0;font-style:italic}#searchResults>li:last-child{border:0}#searchResults .not-found{font-size:13px;padding:10px 15px}#fastSearch.active #searchResults{opacity:1;visibility:visible}#fastSearch.active .search-wrapper .svg-inline--fa{color:var(--color-eureka)}#fastSearch.active input{border-radius:3px 3px 0 0}.dark #fastSearch input,.dark #fastSearch #searchResults{border-color:var(--color-tertiary-bg)}.dark #fastSearch #searchResults{background-color:var(--color-secondary-bg)}.dark #searchResults>li{border-color:var(--color-tertiary-bg)}@media screen and (max-width:768px){#fastSearch{width:100%;max-width:100%;margin:10px 0 0}#fastSearch.active{max-width:100%}#fastSearch.active #searchResults{max-height:320px}}</style><script>let storageColorScheme=localStorage.getItem("lightDarkMode");((storageColorScheme=="Auto"||storageColorScheme==null)&&window.matchMedia("(prefers-color-scheme: dark)").matches||storageColorScheme=="Dark")&&document.getElementsByTagName("html")[0].classList.add("dark")</script><nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0"><a href=/ class="me-6 text-primary-text text-xl font-bold">Hui.Ke</a>
+<button id=navbar-btn class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+<i class="fas fa-bars"></i></button><div id=target class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20"><div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0"><a href=/posts/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 selected-menu-item me-4">Posts</a>
+<a href=/docs/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Docs</a>
+<a href=/categories/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Categories</a>
+<a href=/series/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Series</a>
+<a href=/tags/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Tags</a>
+<a href=/love/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Love</a>
+<a href=/about/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">About</a></div><div id=fastSearch><div class=search-wrapper><input id=searchInput autocomplete=off placeholder=搜索较慢，耐心等待~o(*^▽^*)┛……【黑客朋友们别试了没注入点ヾ(￣▽￣)Bye~Bye~】 tabindex=0>
+<i class="fa-solid fa-magnifying-glass"></i></div><ul id=searchResults></ul></div><script defer src=https://lib.baomitu.com/fuse.js/7.0.0/fuse.min.js></script><script defer src=/js/fastsearch.js></script><div class=flex><div class="relative pt-4 md:pt-0"><div class="cursor-pointer hover:text-eureka" id=lightDarkMode><i class="fas fa-adjust"></i></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id=is-open></div><div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40" id=lightDarkOptions><span class="px-4 py-1 hover:text-eureka" name=Light>Light</span>
+<span class="px-4 py-1 hover:text-eureka" name=Dark>Dark</span>
+<span class="px-4 py-1 hover:text-eureka" name=Auto>Auto</span></div></div></div></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id=is-open-mobile></div></nav><script>let element=document.getElementById("lightDarkMode");storageColorScheme==null||storageColorScheme=="Auto"?document.addEventListener("DOMContentLoaded",()=>{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",switchDarkMode)}):storageColorScheme=="Light"?(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","sun"),element.firstElementChild.classList.add("fa-sun")):storageColorScheme=="Dark"&&(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","moon"),element.firstElementChild.classList.add("fa-moon")),document.addEventListener("DOMContentLoaded",()=>{getcolorscheme(),switchBurger()})</script></div></header><main class="grow pt-16"><div class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8"><div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12"><div class="bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"><article class=prose><h1 class=mb-4>Hugo Eureka 主题增加搜索功能</h1><div class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"><div class="me-6 my-2"><i class="fas fa-calendar me-1"></i>
+<span>2024-05-25</span></div><div class="me-6 my-2"><i class="fa-solid fa-pen-to-square me-1"></i>
+<span>2024-05-25</span></div><div class="me-6 my-2"><i class="fas fa-clock me-1"></i>
+<span>5 min read</span></div><div class="me-6 my-2"><i class="fas fa-folder me-1"></i>
+<a href=https://www.hui.ke/categories/it/ class=hover:text-eureka>IT</a></div><div class="me-6 my-2"><i class="fas fa-th-list me-1"></i>
+<a href=https://www.hui.ke/series/misc/ class=hover:text-eureka>Misc</a></div><div class="me-6 my-2"><i class="fa-solid fa-eye me-1"></i>
+<span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> Hits</div></div><p>  <a href=https://github.com/wangchucheng/hugo-eureka>Hugo Eureka</a> 这个主题的原作已经停更好几年了，曾在 <a href=https://github.com/wangchucheng/hugo-eureka/issues/24#issuecomment-752026714>GitHub Issue</a> 里回复的将会增加搜索功能也是遥遥无期了😔但是随着博主和博客年龄的增加，内容是越来越多，博客需要一个搜索功能已经是刻不容缓了……</p><p>  于是就有了本文，详细记录了博主针对 <a href=https://github.com/wangchucheng/hugo-eureka>Hugo Eureka</a> 主题增加搜索功能所修改的主题源代码，供同样使用该主题或其他 Hugo 主题的博主们参考。</p><p>  博主在参考了网上的各类教程及参阅了 <a href=https://gohugo.io/tools/search/>Hugo 官方文档</a> 后，决定选用 <a href=https://gist.github.com/cmod/5410eae147e4318164258742dd053993>hugofastsearch</a> 作为博客的搜索引擎。</p><blockquote><p>此引擎是开源的，可能因为博客内容太多，实际测试下来搜索不是很流畅，甚至可以说是略微有点卡，每次至少都需要一到两秒才能展现出搜索结果，体验效果可能不如下面商业化的搜索引擎。如果对搜索效率有比较高的要求的，可以考虑采用商业化方案。</p></blockquote><h2 id=config_defaultconfigyaml>/config/_default/config.yaml</h2><p>  首先需要修改的是 Hugo 配置文件，也可以理解为主题配置文件。因为我们的搜索是针对 Hugo 生成的 json 文件，所以需要在配置文件中声明我们需要生成 json 格式的文件。需要在该配置文件最后加入以下代码</p><pre><code class=language-yaml>outputs:
+  home:
+  - html
+  - rss
+  - json     # 告诉 Hugo 需要生成 json
+</code></pre><h2 id=layoutspartialsheaderhtml没有该文件则新建>/layouts/partials/header.html（没有该文件则新建）</h2><p>  然后我们在博客合适的位置添加搜索框，博主是新增在了 header 的右上方，切换深色模式的左边。所以需要在<code>/layouts/partials/header.html</code>的合适位置添加如下代码</p><pre><code class=language-php>&lt;div id=&quot;fastSearch&quot;&gt;
+    &lt;div class=&quot;search-wrapper&quot;&gt;&lt;input id=&quot;searchInput&quot; autocomplete=&quot;off&quot; placeholder=&quot;搜索较慢，耐心等待~o(*^▽^*)┛……【黑客朋友们别试了没注入点ヾ(￣▽￣)Bye~Bye~】&quot; tabindex=&quot;0&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-magnifying-glass&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;ul id=&quot;searchResults&quot;&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;script defer src=&quot;https://lib.baomitu.com/fuse.js/7.0.0/fuse.min.js&quot;&gt;&lt;/script&gt;     # 引入 75CDN 的 fuse.min.js
+&lt;script defer src=&quot;/js/fastsearch.js&quot;&gt;&lt;/script&gt;     # 引入马上要新增的 fastsearch.js
+</code></pre><p>  当然我们对搜索框和搜索结果的样式也需要确定，所以在该文件的最上方再加入 CSS 样式如下</p><pre><code class=language-php>&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+    #fastSearch {
+        width: 100%;
+        margin: 0 15px;
+        max-width: 235px;
+        position: relative;
+        transition: max-width .2s ease-in-out;
+    }
+
+    #fastSearch.active {
+        max-width: 550px;
+    }
+
+    #fastSearch .search-wrapper {
+        position: relative;
+    }
+
+    #fastSearch .search-wrapper .svg-inline--fa {
+        top: 50%;
+        left: 5px;
+        color: #555;
+        font-size: 14px;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+
+    #fastSearch .search-wrapper input {
+        width: 100%;
+        outline: none;
+        font-size: 13px;
+        border-radius: 3px;
+        padding: 3px 10px 3px 25px;
+        border: 1px solid #e5e7eb;
+        background-color: transparent;
+    }
+
+    #searchResults {
+        left: 0;
+        top: 100%;
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        overflow-y: auto;
+        position: absolute;
+        visibility: hidden;
+        border-style: solid;
+        border-color: #e5e7eb;
+        background-color: #FFF;
+        border-width: 0 1px 1px 1px;
+        max-height: calc(100vh - 65px);
+    }
+
+    #searchResults&gt;li {
+        list-style: none;
+        padding: 10px 15px;
+        border-bottom: 1px dotted #000;
+    }
+
+    #searchResults li&gt;a {
+        display: block;
+    }
+
+    #searchResults .title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #searchResults .meta {
+        color: #777;
+        font-size: 13px;
+    }
+
+    #searchResults .description {
+        font-size: 12px;
+        margin: 10px 0 0;
+        font-style: italic;
+    }
+
+    #searchResults&gt;li:last-child {
+        border: 0;
+    }
+
+    #searchResults .not-found {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    #fastSearch.active #searchResults {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #fastSearch.active .search-wrapper .svg-inline--fa {
+        color: var(--color-eureka);
+    }
+
+    #fastSearch.active input {
+        border-radius: 3px 3px 0 0;
+    }
+
+    .dark #fastSearch input,
+    .dark #fastSearch #searchResults {
+        border-color: var(--color-tertiary-bg);
+    }
+
+    .dark #fastSearch #searchResults {
+        background-color: var(--color-secondary-bg);
+    }
+
+    .dark #searchResults&gt;li {
+        border-color: var(--color-tertiary-bg);
+    }
+
+    @media screen and (max-width: 768px) {
+        #fastSearch {
+            width: 100%;
+            max-width: 100%;
+            margin: 10px 0 0 0;
+        }
+
+        #fastSearch.active {
+            max-width: 100%;
+        }
+
+        #fastSearch.active #searchResults {
+            max-height: 320px;
+        }
+    }
+&lt;/style&gt;
+</code></pre><h2 id=staticjsfastsearchjs新增该文件>/static/js/fastsearch.js（新增该文件）</h2><p>  新增我们的核心<code>fashsearch.js</code>文件如下</p><pre><code class=language-javascript>let fuse; // 搜索引擎实例
+let searchVisible = false; // 搜索框是否可见
+let firstRun = true; // 用于标记是否第一次运行，以便延迟加载json数据
+const list = document.getElementById('searchResults'); // 目标&lt;ul&gt;元素
+let first, last; // 搜索结果的第一个和最后一个子元素
+const maininput = document.getElementById('searchInput'); // 搜索输入框
+let resultsAvailable = false; // 是否有搜索结果
+
+// 主键盘事件监听器
+document.addEventListener('keydown', (event) =&gt; {
+    // CMD-/ 显示/隐藏搜索框
+    if (event.metaKey &amp;&amp; event.key === '/') {
+        // 如果是第一次调用搜索，加载json搜索索引
+        if (firstRun) {
+            loadSearch(); // 加载json数据并构建fuse.js搜索索引
+            firstRun = false; // 确保不再重复加载
+        }
+
+        // 切换搜索框的可见性
+        toggleSearchVisibility();
+    }
+
+    // 允许通过ESC键关闭搜索框
+    if (event.key === 'Escape') {
+        if (searchVisible) {
+            toggleSearchVisibility();
+        }
+    }
+
+    // 向下箭头键
+    if (event.key === 'ArrowDown') {
+        if (searchVisible &amp;&amp; resultsAvailable) {
+            event.preventDefault(); // 阻止窗口滚动
+            if (document.activeElement === maininput) {
+                first.focus(); // 如果当前聚焦在输入框，聚焦到第一个搜索结果
+            } else if (document.activeElement === last) {
+                last.focus(); // 如果在最后一个结果，保持不变
+            } else {
+                document.activeElement.parentElement.nextElementSibling.querySelector('a').focus(); // 否则聚焦到下一个搜索结果的&lt;a&gt;元素
+            }
+        }
+    }
+
+    // 向上箭头键
+    if (event.key === 'ArrowUp') {
+        if (searchVisible &amp;&amp; resultsAvailable) {
+            event.preventDefault(); // 阻止窗口滚动
+            if (document.activeElement === maininput) {
+                maininput.focus(); // 如果当前在输入框，不做任何操作
+            } else if (document.activeElement === first) {
+                maininput.focus(); // 如果在第一个结果，返回输入框
+            } else {
+                document.activeElement.parentElement.previousElementSibling.querySelector('a').focus(); // 否则聚焦到上一个搜索结果的&lt;a&gt;元素
+            }
+        }
+    }
+});
+
+// 每次输入一个字符时执行搜索
+maininput.addEventListener('keyup', (e) =&gt; {
+    executeSearch(e.target.value);
+});
+
+// 切换搜索框的可见性
+const toggleSearchVisibility = () =&gt; {
+    const fastSearch = document.getElementById(&quot;fastSearch&quot;);
+    if (!searchVisible) {
+        fastSearch.classList.add(&quot;active&quot;); // 添加active类名，显示搜索框
+        maininput.focus(); // 聚焦到输入框，便于直接输入
+        searchVisible = true; // 标记搜索框可见
+    } else {
+        fastSearch.classList.remove(&quot;active&quot;); // 移除active类名，隐藏搜索框
+        document.activeElement.blur(); // 移除搜索框的聚焦
+        searchVisible = false; // 标记搜索框不可见
+    }
+};
+
+// 当搜索输入框获得焦点时切换搜索框的可见性，并加载搜索索引
+maininput.addEventListener('focus', () =&gt; {
+    if (firstRun) {
+        loadSearch(); // 加载json数据并构建fuse.js搜索索引
+        firstRun = false; // 确保不再重复加载
+    }
+    if (!searchVisible) {
+        toggleSearchVisibility();
+    }
+});
+
+// 监听点击事件，判断是否点击了#fastSearch之外的区域
+document.addEventListener('click', (event) =&gt; {
+    const fastSearch = document.getElementById(&quot;fastSearch&quot;);
+    if (!fastSearch.contains(event.target) &amp;&amp; searchVisible) {
+        toggleSearchVisibility();
+    }
+});
+
+// 使用Fetch API获取json数据
+const fetchJSONFile = (path, callback) =&gt; {
+    fetch(path)
+        .then(response =&gt; response.json())
+        .then(data =&gt; {
+            if (callback) callback(data);
+        })
+        .catch(error =&gt; console.error('Error fetching JSON:', error));
+};
+
+// 加载搜索索引，只在第一次调用搜索框时执行
+const loadSearch = () =&gt; {
+    fetchJSONFile('/index.json', (data) =&gt; {
+        const options = { // fuse.js配置选项
+            shouldSort: true,
+            location: 0,
+            distance: 100,
+            threshold: 0.4,
+            ignoreLocation: true,
+            minMatchCharLength: 2,
+            keys: ['title', 'permalink', 'content']
+        };
+        fuse = new Fuse(data, options); // 从json数据构建索引
+    });
+};
+
+// 执行搜索，每次在搜索框输入字符时调用
+const executeSearch = (term) =&gt; {
+    const results = fuse.search(term); // 使用fuse.js运行查询
+    let searchitems = ''; // 存放结果的HTML
+    if (results.length === 0 &amp;&amp; term.trim() !== '') { // 如果没有结果且输入框不为空
+        searchitems = '&lt;p class=&quot;not-found&quot;&gt;(⊙o⊙)？等半天你跟我说没搜到？(╯‵□′)╯︵┻━┻！换个关键词试试呢 (ಥ _ ಥ)&lt;/p&gt;';
+        resultsAvailable = false;
+    } else { // 构建HTML
+        results.slice(0, 50).forEach(result =&gt; {
+            searchitems += `
+        &lt;li&gt;
+          &lt;a href=&quot;${result.item.permalink}&quot; tabindex=&quot;0&quot;&gt;
+            &lt;div class=&quot;title&quot;&gt;${result.item.title}&lt;/div&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+              &lt;span class=&quot;section&quot;&gt;${result.item.section}&lt;/span&gt; -
+              &lt;span class=&quot;date&quot;&gt;${result.item.date}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;${result.item.description}&lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;`;
+        });
+        resultsAvailable = results.length &gt; 0;
+    }
+
+    list.innerHTML = searchitems;
+    if (results.length &gt; 0) {
+        first = list.querySelector('a'); // 第一个结果的&lt;a&gt;元素
+        last = list.lastElementChild.querySelector('a'); // 最后一个结果的&lt;a&gt;元素
+    }
+};
+</code></pre><h2 id=layouts_defaultindexjson新增该文件>/layouts/_default/index.json（新增该文件）</h2><p>  最后新增<code>/layouts/_default/index.json</code>用于确定搜索的范围、格式等，同时修复了搜索结果重复的问题（非 Eureka 主题可能需要自己适配）</p><pre><code class=language-json>{{- $.Scratch.Add &quot;index&quot; slice -}}
+{{- $section := $.Site.GetPage &quot;section&quot; .Section -}}
+{{- range where .Site.RegularPages &quot;Type&quot; &quot;not in&quot;  (slice &quot;page&quot; &quot;json&quot;) -}}
+  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+    {{- $.Scratch.Add &quot;index&quot; (dict
+      &quot;date&quot; (time.Format &quot;Monday, Jan 2, 2006&quot; .Date)
+      &quot;description&quot; .Summary
+      &quot;permalink&quot; .Permalink
+      &quot;title&quot; .Title
+      &quot;section&quot; .Section
+      &quot;tags&quot; .Params.Tags
+      &quot;categories&quot; .Params.Categories
+      &quot;author&quot; .Params.authors
+      &quot;content&quot; .Content
+      )
+    -}}
+  {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get &quot;index&quot; | jsonify -}}
+</code></pre><blockquote><p>大功告成！可以享用拥有搜索框的 Hugo Eureka 了~φ(゜▽゜*)♪</p></blockquote></article><div class=my-4><a href=https://www.hui.ke/tags/hugo/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#hugo</a>
+<a href=https://www.hui.ke/tags/eureka/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#eureka</a>
+<a href=https://www.hui.ke/tags/%E6%90%9C%E7%B4%A2/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#搜索</a></div><div class=py-2><div class="my-8 flex flex-col items-center md:flex-row"><a href=https://www.hui.ke/authors/hui.ke/ class="md:me-4 text-primary-text h-24 w-24"><img src=https://www.hui.ke/bagua.webp class="bg-primary-bg w-full rounded-full" alt=Avatar></a><div class="mt-4 w-full md:mt-0 md:w-auto"><a href=https://www.hui.ke/authors/hui.ke/ class="mb-2 block border-b pb-1 text-lg font-bold"><h3>Hui.Ke</h3></a><span class="block pb-2">❤ Cyber Security | Safety is a priority.</span>
+<a href=mailto:qaq@gov.moe class=me-2><i class="fas fa-envelope"></i>
+</a><a href="https://wpa.qq.com/msgrd?v=3&amp;uin=3199731997" class=me-2><i class="fab fa-qq"></i>
+</a><a href=/images/anquanyunying.webp class=me-2><i class="fab fa-weixin"></i></a></div></div></div><div class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"><div></div><div class="mt-4 md:mt-0 md:text-right"><span class="text-primary-text block font-bold">Next</span>
+<a href=https://www.hui.ke/posts/my-hk-bank-accounts/ class=block>我的香港银行账户</a></div></div><div id=valine-comments class=mt-4></div><script defer src=https://lib.baomitu.com/valine/1.5.1/Valine.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){new Valine({el:"#valine-comments",appId:"BQnVqWIiq78AdqwyhvBVAa3y-MdYXbMMI",appKey:"RKg5By312YjM8rU6WkkfK9IN",recordIP:"true",serverURLs:"https://valine.thanks.eu.org",visitor:"true"})})</script></div><div class=col-span-2><div class="bg-secondary-bg prose max-w-none rounded p-6"><h3>Series of Posts</h3><a href=https://www.hui.ke/posts/hugo-eureka-theme-add-search-function/ class=no-underline>Hugo Eureka 主题增加搜索功能</a><br><a href=https://www.hui.ke/posts/synology-docker-install-adguard-home/ class=no-underline>Synology Docker Install AdGuard Home</a><br><a href=https://www.hui.ke/posts/top-50-web-2022/ class=no-underline>2022 年全球网站访问量前五十</a><br><a href=https://www.hui.ke/posts/netsh-vlan-show/ class=no-underline>一行代码查看电脑连接过且保存的 WiFi 密码</a><br><a href=https://www.hui.ke/posts/owasp-top-10-2021/ class=no-underline>OWASP Top 10 2021</a><br><a href=https://www.hui.ke/posts/synology-vmm-schedule/ class=no-underline>群晖 VMM 定时开关机</a><br><a href=https://www.hui.ke/posts/build-redroid/ class=no-underline>搭建 ReDroid</a><br><a href=https://www.hui.ke/posts/data-security-and-personal-information-protection/ class=no-underline>数据安全 & 个人信息保护</a><br><a href=https://www.hui.ke/posts/regedit-delete-startup-item/ class=no-underline>注册表删启动项</a><br><a href=https://www.hui.ke/posts/ols-wordpress/ class=no-underline>WordPress + OLS</a><br><a href=https://www.hui.ke/posts/epidemic-prevention-and-cyber-security/ class=no-underline>防疫 & 网络安全</a><br><a href=https://www.hui.ke/posts/comparison-of-thin-light-laptops/ class=no-underline>轻薄本对比</a><br><a href=https://www.hui.ke/posts/sangfor-pt1/ class=no-underline>Sangfor PT1 Certification</a><br><a href=https://www.hui.ke/posts/minutes-of-general-manager-xus-meeting-on-monday/ class=no-underline>周一徐总会议纪要</a><br><a href=https://www.hui.ke/posts/my-github-stars/ class=no-underline>我的 GitHub 星标项目</a><br><a href=https://www.hui.ke/posts/raspberry-pi-motion/ class=no-underline>树莓派运动监测和录制</a><br><a href=https://www.hui.ke/posts/transfer-files-with-rsync/ class=no-underline>使用 rsync SSH 传输文件</a><br><a href=https://www.hui.ke/posts/comparison-of-iflytek-mice/ class=no-underline>科大讯飞鼠标参数对比</a><br><a href=https://www.hui.ke/posts/resolutions-for-vmware-tools-installation-failure/ class=no-underline>VMware Tools 安装失败的解决办法</a><br><a href=https://www.hui.ke/posts/raspberry-pi-intranet-penetration/ class=no-underline>树莓派内网穿透</a><br><a href=https://www.hui.ke/posts/image-and-video-optimization/ class=no-underline>网站图片、视频优化处理</a><br><a href=https://www.hui.ke/posts/ccia-top-50-2020/ class=no-underline>2020 年 CCIA 中国网络安全竞争力 50 强榜单</a><br><a href=https://www.hui.ke/posts/cdn-nodes/ class=no-underline>CDN 节点 IP</a><br><a href=https://www.hui.ke/posts/vulfocus-building-guide/ class=no-underline>Vulfocus 搭建指南</a><br><a href=https://www.hui.ke/posts/build-vulstudy/ class=no-underline>搭建 vulstudy</a><br><a href=https://www.hui.ke/posts/windows-file-recovery-help/ class=no-underline>Windows File Recovery 使用帮助</a><br><a href=https://www.hui.ke/posts/bt-and-trojan/ class=no-underline>在宝塔上制作酸酸乳</a><br><a href=https://www.hui.ke/posts/steam-free-games-27/ class=no-underline>Steam 免费游戏 代码一键领取 27 个</a><br><a href=https://www.hui.ke/posts/build-trojan/ class=no-underline>制作“保质期长的”酸酸乳</a><br><a href=https://www.hui.ke/posts/build-taobao-coupon-website/ class=no-underline>搭建淘宝领券网</a><br><a href=https://www.hui.ke/posts/build-ssr/ class=no-underline>制作酸酸乳</a><br><a href=https://www.hui.ke/posts/hello-everyone/ class=no-underline>名言警句</a><br></div><div class="bg-primary-bg
+prose sticky top-16 z-10 hidden px-6 py-4 lg:block"><h3>On This Page</h3></div><div class="sticky-toc hidden px-6 pb-6 lg:block"><nav id=TableOfContents><ul><li><a href=#config_defaultconfigyaml>/config/_default/config.yaml</a></li><li><a href=#layoutspartialsheaderhtml没有该文件则新建>/layouts/partials/header.html（没有该文件则新建）</a></li><li><a href=#staticjsfastsearchjs新增该文件>/static/js/fastsearch.js（新增该文件）</a></li><li><a href=#layouts_defaultindexjson新增该文件>/layouts/_default/index.json（新增该文件）</a></li></ul></nav></div><script>window.addEventListener("DOMContentLoaded",()=>{enableStickyToc()})</script></div></div><script>document.addEventListener("DOMContentLoaded",()=>{hljs.highlightAll()})</script></div></div></main><footer class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b"><script defer src=/js/click.js></script><div id=poem_ip></div><script type=text/javascript>jinrishici.load(function(e){tags.innerHTML=e.data.matchTags})</script><div><span id=timeDate>载入年天数...</span><span id=times>载入时分秒...</span>
+<script defer src=/js/duration.js></script></div><a href=https://www.foreverblog.cn/go.html target=_blank><img src=https://img.foreverblog.cn/wormhole_4_tp.gif alt style=display:inline-block;width:auto;height:32px title=穿梭虫洞-随机访问十年之约友链博客></a>
+<a href=https://www.travellings.cn/go.html target=_blank rel=noopener title=开往-友链接力><img src=https://www.travellings.cn/assets/logo.gif alt=开往-友链接力 style=display:inline-block;width:auto;height:32px></a>
+<a href=https://notbyai.fyi><img src=/images/Written-By-Human-Not-By-AI-Badge-white.svg alt="Written by Human, Not by AI" style=display:inline-block;width:auto;height:42px></a>
+<a href="https://ipw.cn/ipv6webcheck/?site=hui.ke" title=本站支持IPv6访问 target=_blank><img style=display:inline-block;vertical-align:middle alt=本站支持IPv6访问 src=https://static.ipw.cn/icon/ipv6-s1.svg></a><p class="text-sm text-tertiary-text"><script defer src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>本站总访问量 <span id=busuanzi_value_site_pv></span> 次
+&#183; 您是本站的第 <span id=busuanzi_value_site_uv></span> 个小伙伴</p><a href="https://travel.moe/go.html?travel=on" target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px title=异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！><img src=https://travel.moe/images/icon/icon64.png style=float:left;width:21px>异次元之旅</a>
+<a href="https://icp.gov.moe/?keyword=20111111" target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px><img src=/images/icon120.png style=float:left;width:22px>萌ICP备20111111号</a>
+<a href="https://beian.mps.gov.cn/#/query/webSearch?code=32050802011517" rel=noreferrer target=_blank style=display:inline-block;text-decoration:none;height:20px;line-height:20px><img src=/images/备案图标.png style=float:left;width:20px>苏公网安备 32050802011517号</a>
+<script defer src=/js/tab.js></script><div id=cc-myssl-id style=position:fixed;right:0;bottom:0;width:65px;height:65px;z-index:99><a href="https://myssl.com/hui.ke?from=mysslid"><img src=https://static.myssl.com/res/images/myssl-id.png alt style=width:100%;height:100%></a></div><script defer type=text/javascript src=https://cdn.ywxi.net/js/1.js></script></div></div></footer></body></html>
